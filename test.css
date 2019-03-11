@@ -24,3 +24,8 @@ body{
     display: block;
     width: 100%;
 }
+.left-banner{
+    text-align: center;
+    background: black;
+    color:#FFF81B;
+}
