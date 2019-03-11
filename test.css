@@ -1,6 +1,6 @@
-body{
-	width:50%;
-	margin:auto;
+body {
+    width: 50%;
+    margin: auto;
 }
 
 #wrapper {
@@ -54,6 +54,16 @@ body{
     line-height: 1.75;
 }
 
+.self{
+   display:flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+.self h1{
+  font-size: 2em;
+  font-weight: 40;
+  margin-left: 1em;
+}
 .info ul li.ad {
     background-image:url(images/icons/icn-ad.gif);
 }
@@ -79,7 +89,7 @@ body{
     background-position: 0 .2em;
     height:20px;
     display:block;
-    margin:1.2em auto 1.2em 1em;
+    margin:1.2em auto 1.2em .8em;
 }
 
 .social {
@@ -99,3 +109,23 @@ body{
     padding:0;
     margin-left:6px;
 }
+.hobbies{
+    width: 13em;
+    height: auto;
+    margin:1em auto;
+    display: grid;
+    grid-template-columns:2fr 2fr 2fr;
+    grid-gap: 10px;  
+}
+
+.swim,.cycling,.table-tennis {
+    border-radius: 100%;
+    padding: .2em .2em;
+}
+
+.swim img,.cycling img,.table-tennis img{
+    display:block;
+    width: 100%;
+    height: auto;
+}
+
