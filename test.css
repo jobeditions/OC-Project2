@@ -53,3 +53,27 @@ body{
     color:#ffdc2a;
     line-height: 1.75;
 }
+
+.info ul li.ad {
+    background-image:url(images/icons/icn-ad.gif);
+}
+
+.info ul li.mail {
+    background-image:url(images/icons/icn-mail.gif);
+}
+
+.info ul li.tel {
+    background-image:url(images/icons/icn-tel.gif);
+}
+
+.info ul li.web {
+    background-image:url(images/icons/icn-web.gif);
+}
+.info ul li {
+    background-repeat: no-repeat;
+    padding-left:35px;
+    background-position: 0 .2em;
+    height:20px;
+    display:block;
+    margin:1em auto 1em .5em;
+}
