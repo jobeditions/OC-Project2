@@ -1,0 +1,38 @@
+section {
+
+	border-style: solid;
+	border-width: 2px;
+	border-color: red;
+}
+
+div {
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: blue;
+}
+
+body{
+	width:50%;
+	margin:auto;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 3px;
+}
+ header .avatar {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+    width: 8em;
+}
+
+.photo.avatar img{
+    border-radius: 100%;
+    display: block;
+    width: 100%;
+}
