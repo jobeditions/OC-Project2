@@ -3,22 +3,22 @@ body {
     margin: auto;
 }
 
-#wrapper {
+.wrapper {
     display: grid;
     grid-template-columns: .9fr 2fr;
     grid-gap: 3px;
 }
 
-#wrapper-left {
+.wrapper-left {
     display: grid;
     grid-template-rows: .9fr .9fr auto .4fr;
     grid-gap: 3px;
     background: #ffbf1c;
 }
 
-#wrapper-right {
+.wrapper-right {
     display: grid;
-    grid-template-rows: 1.5fr 1.25fr 1.25fr .5fr;
+    grid-template-rows: 1.25fr 1.25fr 1.25fr .5fr;
     grid-gap: 3px;
 }
 
@@ -48,10 +48,36 @@ body {
     width: 100%;
 }
 .left-banner{
+    position: relative;
     text-align: center;
-    background: black;
-    color:#ffdc2a;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #ffdc2a;
     line-height: 1.75;
+    overflow: hidden;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background: linear-gradient(90deg, #000, #8a8985 , #000);
+    animation: animate 2s linear infinite;
+
+}
+
+@keyframes animate 
+{
+  0%
+  {
+    background-position: -50000%;
+  } 
+  50%
+  {
+    background-position: 0%;
+  } 
+  100%
+  {
+    background-position: 50000%;
+  }  
 }
 
 .self{
@@ -62,7 +88,6 @@ body {
 .self h1{
   font-size: 2em;
   font-weight: 40;
-  margin-left: 1em;
 }
 .info ul li.ad {
     background-image:url(images/icons/icn-ad.gif);
