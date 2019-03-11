@@ -39,7 +39,7 @@ body{
     justify-content: center;
     align-items: center;
     margin: 2em auto;
-    width: 9em;
+    width: 11em;
 }
 
 .photo.avatar img{
@@ -69,11 +69,33 @@ body{
 .info ul li.web {
     background-image:url(images/icons/icn-web.gif);
 }
+
+.info ul li.web {
+    background-image:;
+}
 .info ul li {
     background-repeat: no-repeat;
     padding-left:35px;
     background-position: 0 .2em;
     height:20px;
     display:block;
-    margin:1em auto 1em .5em;
+    margin:1.2em auto 1.2em 1em;
+}
+
+.social {
+    padding-top:1em;
+    padding-left: 6em;
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social ul li {
+    float:left;
+    width:21px;
+    height:24px;
+    margin:0;
+    padding:0;
+    margin-left:6px;
 }
