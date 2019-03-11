@@ -8,9 +8,32 @@ body{
     grid-template-columns: .9fr 2fr;
     grid-gap: 3px;
 }
-#wrapper-left{
-	background: #FFF81B;
+
+#wrapper-left {
+    display: grid;
+    grid-template-rows: .9fr .9fr auto .4fr;
+    grid-gap: 3px;
+    background: #ffbf1c;
 }
+
+#wrapper-right {
+    display: grid;
+    grid-template-rows: 1.5fr 1.25fr 1.25fr .5fr;
+    grid-gap: 3px;
+}
+
+.introduction {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 3px;
+}
+.content {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto auto;
+    grid-gap: 3px;
+}
+
  header .avatar {
     display: flex;
     justify-content: center;
@@ -27,5 +50,6 @@ body{
 .left-banner{
     text-align: center;
     background: black;
-    color:#FFF81B;
+    color:#ffdc2a;
+    line-height: 1.75;
 }
