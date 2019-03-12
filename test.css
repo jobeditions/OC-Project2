@@ -36,13 +36,16 @@ body {
 
 /* CSS Styling of the Contact Section of the CV */
 
-/* new Class is used in toggleClass - Jquery */
+/* new Class is used in toggleClass - Jquery . The styling of "li" is changed on click*/
+
 .new{
     background-color: #FFF !important;
     transform: scale(1.1) rotateX(360deg)translate(.8em, 0);
     transition: .5s ease-in;
 
 }
+
+/* Dividing up the space of "UL" into equal dimension grid rows for "LI" elements*/
 
 .info ul {
     margin: 0;
@@ -52,6 +55,7 @@ body {
 }
 
 /*The icons are placed on Contact section*/
+
 .info ul li.ad {
     background-image:url(images/icons/icn-ad.gif);
    }
@@ -71,6 +75,8 @@ body {
 .info ul li.web {
     background-image:;
 }
+
+/* Css Styling of the background properties  of "li" elements */
 
 .info ul li {
     font-weight:bold;
@@ -107,7 +113,7 @@ body {
 }
 
 
-/* CSS Styling of the banners "Contact" "About Me" Hobbies" along with transition */
+/* CSS Styling of the banners "Contact" "About Me" Hobbies" along with Animation */
 
 
 .left-banner{
@@ -150,12 +156,16 @@ body {
     grid-gap: 3px;
 }
 
-/* Css Styling of the Right Section of the CV - Section Self */
+/*Dividing the Self Section and Social Section into grids */
+
 .introduction {
     display: grid;
     grid-template-columns: 1.5fr 2fr;
     grid-gap: 3px;
 }
+
+/* Css Styling of the Right Section of the CV - Section Self */
+
 .self{
    display:flex;
    justify-content: flex-start;
@@ -177,13 +187,14 @@ body {
 
 /* Css Styling of the Right Section of the CV - Section Social */
 
+/* Positioning and Aligning Social Buttons Vertically */
+
 .social ul {
-    list-style: none;
-    position: relative;
-    top:5%;
-    /*transform: translate(-50%,-50%);*/
-    margin:0 0 0 4em;
-    padding: 0;
+   list-style: none;
+   position: relative;
+   top:5%;
+   margin-left:4em;
+   padding: 0;
    display: flex;
 }
 
@@ -192,6 +203,8 @@ body {
     padding: 0;
     margin-left:.7em;
 }
+
+/*Basic Styling of the Social buttons */
 
 .social li a{
     color:#262626;
@@ -204,12 +217,19 @@ body {
     transition: .5s;
     box-shadow: -.5em .5em .5em rgba(0,0,0,.5);
 }
+.social li a i{
+    margin-top:.05em;
+}
+
+/*Creating styles  of the Social buttons on HOVER*/
 
 .social li a:hover{
     transition: .5s;
     box-shadow: -.9em .9em .9em rgba(0,0,0,.5);
     transform: scale(1.2) rotate(-20deg) skew(2deg) translate(-.3em, -.3em);
 }
+
+/* Creating the side frames of the Social buttons */
 
 .social li a:before{
     content: '';
@@ -234,12 +254,17 @@ body {
     transform: rotate(0deg) skewX(-45deg);
     transition: .5s;
 }
+
+
 .social li a i{
     margin-top:.05em;
 }
+/*Changing text color of the Social buttons on hover */
+
 .social li a i:hover{
     color: #fff;
 }
+/*Changing background color of the Social buttons on hover */
 
 .social ul li:nth-child(1) a:hover{
     background: #1ab7ea;
