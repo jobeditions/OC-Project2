@@ -98,6 +98,10 @@ body {
  .self-inner .name-2{
    font-size: 1em;
  }
+
+.ad{
+    font-weight:bold;
+}
 .info ul li.ad {
     background-image:url(images/icons/icn-ad.gif);
 }

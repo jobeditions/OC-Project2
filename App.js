@@ -1,6 +1,6 @@
 
 
-$('.info').on('click',function(){
-	$(this).css('font-weight','bold');
+$('.selected').on('click',function(){
+	$(this).toggleClass('ad');
 });
 
