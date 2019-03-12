@@ -157,6 +157,12 @@ body {
     box-shadow: -.5em .5em .5em rgba(0,0,0,.5);
 }
 
+.social li a:hover{
+    transition: .5s;
+    box-shadow: -.9em .9em .9em rgba(0,0,0,.5);
+    transform: scale(1.2) rotate(-20deg) skew(2deg) translate(-.3em, -.3em);
+}
+
 .social li a:before{
     content: '';
     position: absolute;
