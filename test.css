@@ -122,19 +122,45 @@ footer {
 
 .new-footer {
    background: rgb(0,0,0,.5);
-   transition: 1s;
+   transition: .5s;
 }
+
+.new-revfooter
+   animation: backgrnd 10s linear;
+}
+
+@keyframes backgrnd 
+{
+  0%
+  {
+    background-color: rgb(0,0,0,.5);
+  } 
+  50%
+  {
+    background-color: rgb(0,0,0,.25);
+  } 
+  100%
+  {
+    background-color: transparent;
+  }  
+}
+
 
 /* new Class is used in toggleClass - Jquery . The stylings of hobby icons are changed on click*/
 
 .new-hobbies {
     background: #ffee10;
-    transform: scale(1.15,1.15) rotateY(540deg);
-    transition: all 1s ease-in;
-    border: solid .2em #333;
+    transform: scale(1.2,1.2) rotateY(540deg);
+    transition: all 2s ease-in;
+    border: solid .21em #333;
     box-shadow: (0 0 1em #ffee10);
     text-shadow: (0 0 1em #ffee10);
     border-radius: 100%;
+}
+.reverse-hobbies {
+    background: transparent;
+    transform: scale(1,1) rotateY(-360deg);
+    transition: all 2s ease-in;
 }
 
 .swim img,.cycling img,.table-tennis img {
@@ -211,7 +237,7 @@ footer {
     overflow: hidden;
     background-repeat: no-repeat;
     background: linear-gradient(90deg, #000, #636362 , #000);
-    animation: animate 2s linear infinite;
+    animation: animate 5s linear infinite;
 
 }
 
