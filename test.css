@@ -21,20 +21,33 @@ body {
 /* CSS Styling of the Profile Photo Section of the CV */
 header .profile{
     height: 100%;
+    display: block;
 }
- 
+header .profile>span{
+    display: block;
+    float:left;
+    height: 1em;
+    width: 1em;
+    border-radius: 10%;
+    border:solid .4px #000;
+    background: url("images/self/ashok9.jpg");
+    background-size: 25%;
+    background-attachment: fixed;
+
+}
  header .avatar {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
-    margin: 2.5em auto 0 auto;
+    margin: 2em auto;
     width: 11em;
 }
 
 .photo.avatar img{
-    border-radius: 100%;
+    border-radius: 50%;
     display: block;
     width: 100%;
+    height:auto;
 }
 
 /* CSS Styling of the Contact Section of the CV */
