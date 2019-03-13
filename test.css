@@ -45,6 +45,13 @@ body {
 
 }
 
+.reverse{
+    background-color: transparent !important;
+    transform: scale(1) rotateX(0deg)translate(0, 0);
+    transition: .5s ease-in;
+
+}
+
 /* Dividing up the space of "UL" into equal dimension grid rows for "LI" elements*/
 
 .info ul {
@@ -150,7 +157,7 @@ footer {
 
 .new-hobbies {
     background: #ffee10;
-    transform: scale(1.2,1.2) rotateY(540deg);
+    transform: scale(1.3) rotateY(540deg);
     transition: all 2s ease-in;
     border: solid .21em #333;
     box-shadow: (0 0 1em #ffee10);
@@ -159,7 +166,7 @@ footer {
 }
 .reverse-hobbies {
     background: transparent;
-    transform: scale(1,1) rotateY(-360deg);
+    transform: scale(1) rotateY(0deg);
     transition: all 2s ease-in;
 }
 

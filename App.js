@@ -1,8 +1,13 @@
 
-$('.selected li').on('click',function(){
-	$(this).toggleClass('new');
-});
-
+$('.selected li').on('click', function () {
+       
+        if ($(this).hasClass('new')){
+            $(this).removeClass('new');
+            $(this).addClass('reverse');
+        } else {
+            $(this).addClass('new');
+        }
+    });
 
 $('.selector').on('click', function () {
        
