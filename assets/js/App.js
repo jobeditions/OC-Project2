@@ -54,7 +54,7 @@ $('.selector').on('click', function () {
  });
 
 // Self -Section 
-
+  $('h1.name').css('display','inline-block');
   typeEffect($('h1.name'), speed);
   setTimeout(function(){
     $('h2.name-1').css('display','inline-block');

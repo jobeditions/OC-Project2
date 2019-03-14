@@ -32,7 +32,7 @@ header .profile>span{
     width: 1em;
     border-radius: 10%;
     border:solid .4px #000;
-    background: url("images/self/ashok9.jpg");
+    background: url("assets/images/self/ashok9.jpg");
     background-size: 23%;
     background-attachment: fixed;
 
@@ -93,19 +93,19 @@ header .profile>span{
 /*The icons are placed on Contact section*/
 
 .info ul li.ad {
-    background-image:url(images/icons/icn-ad.gif);
+    background-image: url(assets/images/icons/icn-ad.gif);
    }
 
 .info ul li.mail {
-    background-image:url(images/icons/icn-mail.gif);
+    background-image:url(assets/images/icons/icn-mail.gif);
     }
 
 .info ul li.tel {
-    background-image:url(images/icons/icn-tel.gif);
+    background-image:url(assets/images/icons/icn-tel.gif);
 }
 
 .info ul li.web {
-    background-image:url(images/icons/icn-web.gif);
+    background-image:url(assets/images/icons/icn-web.gif);
 }
 
 .info ul li.skype {
@@ -323,6 +323,7 @@ footer {
     letter-spacing: 1px;
     line-height: 1.5em;
     color: #ffbf1c;
+    display: none;
 }
 .self .self-inner >h2{
     text-transform: uppercase;
