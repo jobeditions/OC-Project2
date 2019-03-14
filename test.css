@@ -21,10 +21,7 @@ body {
 /* CSS Styling of the Profile Photo Section of the CV */
 header .profile{
     height: 100%;
-    display: block;
-    
-    z-index: -1;
-    overflow: hidden;
+    display: none;
 }
 header .profile>span{
     float:left;
@@ -119,11 +116,15 @@ header .profile>span{
     width:100%;
 }
 
-.info ul li:hover {
+.info li:hover {
     background-color: rgba(255,255,255,.05);
 }
 /* CSS Styling of About-Me Section of the CV */
 
+/*.block-about-me{
+    display: table-cell;
+    vertical-align: middle;
+}*/
 .about-para{
    margin: 7.5% 7.5%;
    text-align: center;
@@ -300,18 +301,27 @@ footer {
     font-weight: 500;
     letter-spacing: 1px;
     line-height: 1.5em;
-}
-.self-inner h1 span{
     color: #ffbf1c;
 }
+.self .self-inner >h2{
+    text-transform: uppercase;
+    font-size: 2.7em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    color: #000;
+    display: none;
+}
+
  .self-inner .name-2{
-   font-size: 1.15em  !important;
-   font-weight: 500  !important;
+   font-size: 1.2em  !important;
+   font-weight: 550  !important;
    line-height: 1.5em !important;
+   display: none;
  }
 
  .self-inner .name-2 span{
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 /* Css Styling of the Right Section of the CV - Section Social */
