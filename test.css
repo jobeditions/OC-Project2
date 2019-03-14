@@ -276,7 +276,7 @@ footer {
   } 
   25%
   {
-    background-position: _-25000%;
+    background-position: -25000%;
   }
   50%
   {
@@ -352,8 +352,8 @@ footer {
 .social ul {
    list-style: none;
    position: relative;
-   top:5%;
-   margin-left:4em;
+   top: 5%;
+   margin-left: 7%;
    padding: 0;
    display: flex;
 }
@@ -361,7 +361,7 @@ footer {
 .social ul li {
     list-style: none;
     padding: 0;
-    margin-left:.7em;
+    margin-left: 7%;
 }
 
 /*Basic Styling of the Social buttons */
@@ -369,16 +369,13 @@ footer {
 .social li a{
     color:rgba(38, 38, 38,.85);
     background-color: rgba(255,191,28,.8);
-    width:2.3em;
-    height:2.3em;
+    width: 135%;
+    height: 120%;
     display:block;
     text-align: center;
     transform: rotate(-20deg) skew(2deg);
     transition: .5s;
     box-shadow: -.5em .5em .5em rgba(0,0,0,.5);
-}
-.social li a i{
-    margin-top:.05em;
 }
 
 /*Creating styles  of the Social buttons on HOVER*/
@@ -386,7 +383,7 @@ footer {
 .social li a:hover{
     transition: all .5s ease-out;
     box-shadow: -.9em .9em .9em rgba(0,0,0,.5);
-    transform: scale(1.2) rotate(-20deg) skew(2deg) translate(-.3em, -.3em);
+    transform: scale(1.2) rotate(-20deg) skew(2deg) translate(-5%, -5%);
 }
 
 /* Creating the side frames of the Social buttons */
@@ -414,10 +411,8 @@ footer {
     transform: rotate(0deg) skewX(-45deg);
     transition: .5s;
 }
-
-
 .social li a i{
-    margin-top:.05em;
+    margin-top:.1em;
 }
 /*Changing text color of the Social buttons on hover */
 
