@@ -22,4 +22,6 @@ $('.selector').on('click', function () {
         }
     });
 
-
+$('.photo').on('click', function () {
+$(this).toggleClass('nodisplay-photo');
+});

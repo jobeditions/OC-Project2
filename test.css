@@ -22,9 +22,11 @@ body {
 header .profile{
     height: 100%;
     display: block;
+    
+    z-index: -1;
+    overflow: hidden;
 }
 header .profile>span{
-    display: block;
     float:left;
     height: 1em;
     width: 1em;
@@ -36,7 +38,6 @@ header .profile>span{
 
 }
  header .avatar {
-    display: none;
     justify-content: center;
     align-items: center;
     margin: 2em auto;
@@ -48,6 +49,11 @@ header .profile>span{
     display: block;
     width: 100%;
     height:auto;
+}
+
+
+.nodisplay-photo{
+    display: none  !important;
 }
 
 /* CSS Styling of the Contact Section of the CV */
