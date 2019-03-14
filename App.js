@@ -1,4 +1,27 @@
+//Declaring the variables for the function typeEffect
+    var speed = 125;
+    var delay = $('h1.name').text().length * speed + speed;
 
+//Declaring the the function typeEffect  
+
+function typeEffect(element, speed) {
+	var text = $(element).text();
+	$(element).html('');
+	
+	var i = 0;
+	var timer = setInterval(function() {
+					if (i < text.length) {
+						$(element).append(text.charAt(i));
+						//writing charecters one after another
+						i++;
+					} else {
+						clearInterval(timer);
+					}
+				}, speed);
+}
+
+
+// Contact -Section - Toggling the CSS classes conditionally
 
 $('.selected li').on('click', function () {
        
@@ -11,6 +34,8 @@ $('.selected li').on('click', function () {
         }
     });
 
+// Hobbies -Section - Toggling the CSS classes conditionally
+
 $('.selector').on('click', function () {
        
         if ($(this).hasClass('new-hobbies')){
@@ -22,30 +47,14 @@ $('.selector').on('click', function () {
         }
     });
 
-$('.photo').on('click', function () {
-$(this).toggleClass('nodisplay-photo');
-});
+// Profile -Section 
 
-function typeEffect(element, speed) {
-	var text = $(element).text();
-	$(element).html('');
-	
-	var i = 0;
-	var timer = setInterval(function() {
-					if (i < text.length) {
-						$(element).append(text.charAt(i));
-						i++;
-					} else {
-						clearInterval(timer);
-					}
-				}, speed);
-}
+ $('.header').on('click', function () {
+   $('.photo').toggleClass('nodisplay-photo');
+ });
 
+// Self -Section 
 
-$( document ).ready(function() {
-  var speed = 75;
-  var delay = $('h1.name').text().length * speed + speed;
-  
   typeEffect($('h1.name'), speed);
   setTimeout(function(){
     $('h2.name-1').css('display','inline-block');
@@ -55,5 +64,8 @@ $( document ).ready(function() {
     $('p.name-2').css('display', 'inline-block');
     typeEffect($('p.name-2'), speed);
   }, delay);
+
+  $('.photo').on('click', function () {
+$(this).toggleClass('nodisplay-photo');
 });
 
