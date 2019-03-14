@@ -66,7 +66,7 @@ header .profile>span{
 
 .new{
     background-color: #FFF !important;
-    transform: scale(1.1) rotateX(360deg)translate(.8em, 0);
+    transform: scale(1.1) rotateX(360deg)translate(5%, 0);
     transition: .5s ease-in;
 
 }
@@ -79,9 +79,12 @@ header .profile>span{
 }
 
 /* Dividing up the space of "UL" into equal dimension grid rows for "LI" elements*/
-
+.info{
+    height: 87%;
+}
 .info ul {
     margin: 0;
+    height: 100%;
     display:grid;
     grid-template-rows:1fr 1fr 1fr 1fr;
     overflow: hidden; 
@@ -105,22 +108,23 @@ header .profile>span{
     background-image:url(images/icons/icn-web.gif);
 }
 
-.info ul li.web {
+.info ul li.skype {
     background-image:;
+    padding-bottom: 5%;
 }
 
 /* Css Styling of the background properties  of "li" elements */
 
 .info ul li {
-    font-weight:bold;
+    font-weight: bold;
     background-color: orange;
     background-repeat: no-repeat;
-    padding:.5em 0 0 3.25em;
+    padding: 2% 0 0 20%;
     background-position: .7em .8em;
     display:block;
-    margin: .5em 0 0 0;
-    height:3em;
-    width:100%;
+    margin-top: 1%;
+    height: 80%;
+    width: 80%;
 }
 
 .info li:hover {
@@ -150,14 +154,14 @@ footer {
     margin: 1em auto;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr; 
-    grid-gap: .5em;
+    grid-gap: 5%;
 }
 
 .swim,.cycling,.table-tennis {
     
     border: solid .19em #333;
     border-radius: 100%;
-    padding: .6em .6em;
+    padding: 12% 12%;
 }
 
 /* new Class is used in toggleClass - Jquery . The background color of "footer" is changed on click*/
