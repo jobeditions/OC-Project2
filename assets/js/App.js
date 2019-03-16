@@ -1,6 +1,16 @@
 //Declaring the variables for the function typeEffect
     var speed = 125;
     var delay = $('h1.name').text().length * speed + speed;
+    var $newdiv1 = $( "<div class='profile'></div>");
+
+/* <div class = "profile">
+                      <script type = "text/javascript">
+                        for(i = 0; i < 304; i++){ 
+                          document.write("<span></span>");
+                        }
+                        </script>
+                    </div>
+*/
 
 //Declaring the the function typeEffect  
 
@@ -20,6 +30,23 @@ function typeEffect(element, speed) {
 				}, speed);
 }
 
+/*function typeBold(element, speed) {
+  var text = $(element).text();
+  $(element).html(text);
+  
+  var i = 0;
+  var timer = setInterval(function() {
+          if (i < text.length) {
+
+            text.charAt(i).css('font-weight','bold !important');
+           // changing charecters to bold one after another
+            i++;
+          } else {
+            clearInterval(timer);
+          }
+        }, speed);
+}
+*/
 
 // Contact -Section - Toggling the CSS classes conditionally
 
@@ -65,7 +92,16 @@ $('.selector').on('click', function () {
     typeEffect($('p.name-2'), speed);
   }, delay);
 
-  $('.photo').on('click', function () {
-$(this).toggleClass('nodisplay-photo');
-});
+  //typeBold($('.about-para'), speed);
+
+  $('.avatar').on('click', function () {
+      var content = '';
+      $("header").prepend('<div class="profile"></div>');
+      for (var i = 0; i < 304; i++) {
+       content += "<span></span>" ;
+       }
+      $(".profile").append(content);
+      });
+
+
 
