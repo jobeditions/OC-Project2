@@ -1,5 +1,5 @@
 body {
-    width: 55%;
+    width: 100%;
     margin: auto;
 }
 
@@ -12,6 +12,8 @@ body {
 /* Css Styling of the left Section of the CV - Profile Photo, Contact, About Me and Hobbies */
 
 .wrapper-left {
+    position: absolute;
+    width: 70%;
     grid-column: 1/2;
     display: grid;
     grid-template-rows: repeat(4, auto);

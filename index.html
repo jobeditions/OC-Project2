@@ -23,6 +23,12 @@
         <link type="text/css" rel="stylesheet" href="test.css"/>
         <!--linking the css file with the HTML document.This document is used for testing css styles to be removed later -->
 
+        <link type="text/css" rel="stylesheet" href="style.css"/>
+        <!--linking the css file with the HTML document.This document is used for testing css styles to be removed later -->
+
+        <link type="text/css" rel="stylesheet" media = "screen and (min-width:480px)" href="above480.css"/>
+        <!--linking the css media-query for viewport size more than 480px.-->
+
         <link type="text/css" rel="stylesheet" href="assets/css/debugger.css"/>
         <!--linking the css file with the HTML document.This document is used for debugging css stylesheets -->
 
@@ -84,19 +90,43 @@
                     <div class="left-banner">
                       	<h1>Hobbies</h1>
                     </div>
-                    <div class="hobbies">
-                    <!-- Begin Hobbies Icons -->
-                        <div class="swim selector">
-                        <img src="assets/images/hobby/swim.png" alt="Hobby-Swimming" />
+                    <div class="hobbies-outer">
+                        <div class="hobbies">
+                        <!-- Begin Hobbies Icons -->
+                            <div class="swim selector">
+                            <img src="assets/images/hobby/swim.png" alt="Hobby-Swimming" />
+                            </div>
+                            <div class="cycling selector">
+                            <img src="assets/images/hobby/Cycling.png" alt="Hobby-Cycling" />
+                            </div>
+                            <div class="table-tennis selector">
+                            <img src="assets/images/hobby/table-tennis.png" alt="Hobby Table-Tennis" />
                         </div>
-                        <div class="cycling selector">
-                        <img src="assets/images/hobby/Cycling.png" alt="Hobby-Cycling" />
-                        </div>
-                        <div class="table-tennis selector">
-                        <img src="assets/images/hobby/table-tennis.png" alt="Hobby Table-Tennis" />
-                        </div>   
-                    </div>
+                    </div>   
         	    </footer>
+
+                <div class="social-1">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/ashok.devchowdhury" title="Facebook" target="_blank"><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a class="#" href="" title="Twitter"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/ashok-deb-020a36145/" title="Linkedin" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a class="#" href="https://github.com/jobeditions" title="Github" target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="javascript:window.print()" title="Print"><i class="fas fa-print fa-2x" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a id="contact" href="contact/index.html" title="Contact Me"><i class="fas fa-file-contract fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </div>
         	<!-- End of Section wrapper-left -->
             </div>
 
@@ -104,7 +134,7 @@
             
             <div class="wrapper-right">
 
-                <section class="right-section introduction">
+            <section class="right-section introduction">
             	<div class="self">
                     <div class="self-inner">
                         <h1 class="name" style="text-align : left;float : left;">Ashok</h1><h2 class="name-1" style="text-align:right;">DEB</h2>
@@ -133,14 +163,19 @@
                         	<a id="contact" href="contact/index.html" title="Contact Me"><i class="fas fa-file-contract fa-2x"></i></a>
                         </li>
                     </ul>
-                </section>
-                <!-- End of Section Introduction -->
-                <!-- Beginning of Education Section -->
-                <section class="right-section education">
-                    <i class="fas fa-graduation-cap fa-2x" style="float : left"></i>
-                    <h2>Education</h2>
-                    <hr>
-                    
+                </div>
+            </section>
+            <!-- End of Section Introduction -->
+
+            <!-- Beginning of Education Section -->
+            <section class="right-section education">
+
+                	<div class="heading">
+                        <i class="fas fa-graduation-cap fa-2x" style="float : left"></i>
+                        <h2>Education</h2>
+                        <hr>
+                    </div>
+
                     <article class="content">
                         <div class="left-content">
                       	    <label class="container"><h3>Sep 2005 - Feb 2007</h3>
@@ -172,9 +207,12 @@
         
                 <!-- Beginning of Experience Section -->
                 <section class="right-section experience">
-                	<i class="fas fa-briefcase fa-2x" style="float : left"></i>
-                    <h2>Experience</h2>
-                    <hr>
+
+                	<div class="heading">
+                	    <i class="fas fa-briefcase fa-2x" style="float : left"></i>
+                        <h2>Experience</h2>
+                        <hr>
+                    </div>
                     
                     <article class="content">
                         <div class="left-content">
@@ -208,10 +246,12 @@
                 <!-- Beginning of Reference Section -->
                 <section class="right-section reference">
                 	
-                	<i class="fas fa-pen fa-2x" style="float : left"></i>
-                    <h2>Reference</h2>
-                    <hr>
-             
+                	<div class="heading">
+                	    <i class="fas fa-pen fa-2x" style="float : left"></i>
+                        <h2>Reference</h2>
+                        <hr>
+                    </div>
+                    
                     <article class="content">
                         <div class="left-content">
                       	    <label class="container"><h3>Sep 2005 - Feb 2007</h3>
