@@ -3,15 +3,6 @@
     var delay = $('h1.name').text().length * speed + speed;
     var $newdiv1 = $( "<div class='profile'></div>");
 
-/* <div class = "profile">
-                      <script type = "text/javascript">
-                        for(i = 0; i < 304; i++){ 
-                          document.write("<span></span>");
-                        }
-                        </script>
-                    </div>
-*/
-
 //Declaring the the function typeEffect  
 
 function typeEffect(element, speed) {
@@ -92,16 +83,19 @@ $('.selector').on('click', function () {
     typeEffect($('p.name-2'), speed);
   }, delay);
 
-  //typeBold($('.about-para'), speed);
 
-  $('.avatar').on('click', function () {
+  window.addEventListener('load',function () {
       var content = '';
       $("header").prepend('<div class="profile"></div>');
-      for (var i = 0; i < 304; i++) {
+      for (var i = 0; i < 272; i++) {
        content += "<span></span>" ;
        }
-      $(".profile").append(content);
+      $(".profile").wrapInner(content);
       });
+
+$('.avatar').on('click', function () {
+  $(this).toggleClass('avtoggle');
+});
 
 
 

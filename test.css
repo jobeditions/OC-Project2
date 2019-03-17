@@ -5,8 +5,7 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: .9fr 2fr;
-    grid-gap: 3px;
+    grid-template-columns: .95fr 2fr;
 }
 
 /* Css Styling of the left Section of the CV - Profile Photo, Contact, About Me and Hobbies */
@@ -29,20 +28,22 @@ header .profile{
 header .profile>span{
     float: left;
     height: 1em;
-    width: 1.02em;
+    width: 1.035em;
     border-radius: 20%;
     border: solid .4px #000;
     background: url("assets/images/self/ashok9.jpg");
     background-size: 23.5%;
+    background-position: 32% 67%;
     background-attachment: fixed;
 }
 
 /* CSS Styling of the circled Photo Section of the CV */
 
  header .avatar {
-    margin: 2.5% 1% 2% 1.5%;
-    width: 100%;
-    margin: 0 .5% 0 -.5%;
+    position: absolute;
+    width: 17.25%;
+    padding:.5% 0 .45% 0;
+    background: #ffbf1c;
 }
 
 .photo.avatar img{
@@ -51,6 +52,11 @@ header .profile>span{
     width: 80%;
     margin:8% auto;
     }
+
+.avtoggle{
+    opacity: 0;
+    transition-duration : .1s;
+}
 
 /* CSS Styling of the Contact Section of the CV */
 
