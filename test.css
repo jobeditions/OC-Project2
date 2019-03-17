@@ -5,14 +5,14 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 32% 68%;
+    grid-template-columns: 230px 4% auto 4%;
+    height: 100%
 }
 
 /* Css Styling of the left Section of the CV - Profile Photo, Contact, About Me and Hobbies */
 
 .wrapper-left {
-    position: fixed;
-    width:230px;
+    grid-column: 1/2;
     display: grid;
     grid-template-rows: repeat(4, auto);
     background: #ffbf1c;
@@ -42,8 +42,8 @@ header .profile>span{
 
  header .avatar {
     position: absolute;
-    width: 100%;
-    padding:8.5% 0 8.5% 0;
+    width: 229px;
+    padding:1.75% 0 1.75% 0;
     background: #ffbf1c;
 }
 
@@ -333,16 +333,9 @@ footer {
 /* Css Styling of the Right Section of the CV - Self, Social, Education ,Experience and Reference */
 
 .wrapper-right {
+    grid-column: 3/4;
     display: grid;
-    grid-template-columns: 4% auto 4%;
-    grid-gap: 3px;
-}
-
-.wrapper-right-inner {
-   grid-column: 2 / 3;
-   display: grid;
-   grid-template-rows: .5fr repeat(3, auto);
-   margin: 0;
+    grid-template-rows: .5fr repeat(3, auto);
 }
 
 /*Dividing the Self Section and Social Section into grids */

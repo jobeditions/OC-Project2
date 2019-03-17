@@ -59,11 +59,17 @@ $('.selector').on('click', function () {
         if ($(this).hasClass('new-hobbies')){
             $(this).removeClass('new-hobbies');
             $(this).addClass('reverse-hobbies');
+            if(!$(".swim").hasClass('new-hobbies') && !$(".cycling").hasClass('new-hobbies') && !$(".table-tennis").hasClass('new-hobbies')){
+            $('.block-hobbies').removeClass('new-footer');
+          }
         } else {
-        	$(this).removeClass('reverse-hobbies');
+        	  $(this).removeClass('reverse-hobbies');
             $(this).addClass('new-hobbies');
+            $('.block-hobbies').addClass('new-footer');
         }
     });
+
+
 
 // Profile -Section 
 
