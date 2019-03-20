@@ -148,7 +148,7 @@ footer {
   font-weight: 500;
   letter-spacing: 1.5px;
   color: #ffdc2a;
-  text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;
+  text-shadow: -1px 0 1px black, 0 1px 1px #000, 1px 0 1px black, 0 -1px 1px #000;
   line-height: 1.75;
   overflow: hidden;
   background-repeat: no-repeat;
@@ -182,75 +182,31 @@ footer {
   display: grid;
   justify-self: center;
   align-self: center; }
+  .self .self-inner h1 {
+    text-transform: uppercase;
+    font-size: 2.7em;
+    font-weight: 500;
+    letter-spacing: .5px;
+    line-height: 1.5em;
+    color: #ffbf1c;
+    display: none; }
+  .self .self-inner h2 {
+    text-transform: uppercase;
+    font-size: 2.7em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    margin-left: 5%;
+    color: #000;
+    display: none; }
+  .self .self-inner .name-2 {
+    font-size: 1.2em  !important;
+    font-weight: 550  !important;
+    line-height: 1.5em !important;
+    display: none; }
+    .self .self-inner .name-2 span {
+      text-decoration: underline !important; }
 
-.self .self-inner > h1 {
-  text-transform: uppercase;
-  font-size: 2.7em;
-  font-weight: 500;
-  letter-spacing: .5px;
-  line-height: 1.5em;
-  color: #ffbf1c;
-  display: none; }
-
-.self .self-inner > h2 {
-  text-transform: uppercase;
-  font-size: 2.7em;
-  font-weight: 500;
-  letter-spacing: 1px;
-  line-height: 1.5em;
-  margin-left: 5%;
-  color: #000;
-  display: none; }
-
-.self-inner .name-2 {
-  font-size: 1.2em  !important;
-  font-weight: 550  !important;
-  line-height: 1.5em !important;
-  display: none; }
-
-.self-inner .name-2 span {
-  text-decoration: underline !important; }
-
-/* Css Styling of the Right Section of the CV - Section Social */
-/* Positioning and Aligning Social Buttons Vertically */
-/*Sass nesting code for Social Section 
-
-.social ul {
-    list-style: none;
-    position: relative;
-    top: 5%;
-    margin-left: 7%;
-    padding: 0;
-    display: flex;
-
-    li {
-        list-style: none;
-        padding: 0;
-        margin-left: 7%;
-
-        a {
-            color:rgba(38, 38, 38,.85);
-            background-color: rgba(255,191,28,.8);
-            width: 135%;
-            height: 120%;
-            display:block;
-            text-align: center;
-            transform: rotate(-20deg) skew(2deg);
-            transition: .5s;
-            box-shadow: -.5em .5em .5em rgba(0,0,0,.5);
-
-            i {
-                margin-top:.1em;
-              }
-
-            i:hover{
-                color: #fff;
-              }
-
-            }
-
-
-} */
 .social ul {
   list-style: none;
   position: relative;
@@ -258,59 +214,48 @@ footer {
   margin-left: 10%;
   padding: 0;
   display: flex; }
-
-.social ul li {
-  list-style: none;
-  padding: 0;
-  margin-left: 5.5%; }
-
-/*Basic Styling of the Social buttons */
-.social li a {
-  color: rgba(38, 38, 38, 0.85);
-  background-color: rgba(255, 191, 28, 0.8);
-  width: 112%;
-  height: 112%;
-  display: block;
-  text-align: center;
-  transform: rotate(-20deg) skew(2deg);
-  transition: .5s;
-  box-shadow: -0.5em 0.5em 0.5em rgba(0, 0, 0, 0.5); }
-
-/*Creating styles  of the Social buttons on HOVER*/
-.social li a:hover {
-  transition: all .5s ease-out;
-  box-shadow: -0.9em 0.9em 0.9em rgba(0, 0, 0, 0.5);
-  transform: scale(1.2) rotate(-20deg) skew(2deg) translate(-5%, -5%); }
-
-/* Creating the side frames of the Social buttons */
-.social li a:before {
-  content: '';
-  position: absolute;
-  background: #b1b1b1;
-  top: .25em;
-  left: -.4em;
-  width: .4em;
-  height: 100%;
-  transform: rotate(0deg) skewY(-45deg);
-  transition: .5s; }
-
-.social li a:after {
-  content: '';
-  position: absolute;
-  background: #b1b1b1;
-  bottom: -.3em;
-  left: -.1em;
-  width: 100%;
-  height: .4em;
-  transform: rotate(0deg) skewX(-45deg);
-  transition: .5s; }
-
-.social li a i {
-  margin-top: .1em; }
-
-/*Changing text color of the Social buttons on hover */
-.social li a i:hover {
-  color: #fff; }
+  .social ul li {
+    list-style: none;
+    padding: 0;
+    margin-left: 5.5%; }
+    .social ul li a {
+      color: rgba(38, 38, 38, 0.85);
+      background-color: rgba(255, 191, 28, 0.8);
+      width: 112%;
+      height: 112%;
+      display: block;
+      text-align: center;
+      transform: rotate(-20deg) skew(2deg);
+      transition: .5s;
+      box-shadow: -0.5em 0.5em 0.5em rgba(0, 0, 0, 0.5); }
+      .social ul li a:hover {
+        transition: all .5s ease-out;
+        box-shadow: -0.9em 0.9em 0.9em rgba(0, 0, 0, 0.5);
+        transform: scale(1.2) rotate(-20deg) skew(2deg) translate(-5%, -5%); }
+      .social ul li a:before {
+        content: '';
+        position: absolute;
+        background: #b1b1b1;
+        top: .25em;
+        left: -.4em;
+        width: .4em;
+        height: 100%;
+        transform: rotate(0deg) skewY(-45deg);
+        transition: .5s; }
+      .social ul li a:after {
+        content: '';
+        position: absolute;
+        background: #b1b1b1;
+        bottom: -.3em;
+        left: -.1em;
+        width: 100%;
+        height: .4em;
+        transform: rotate(0deg) skewX(-45deg);
+        transition: .5s; }
+      .social ul li a i {
+        margin-top: .1em; }
+        .social ul li a i:hover {
+          color: #FFF; }
 
 /*Changing background color of the Social buttons on hover */
 .social ul li:nth-child(1) a:hover {
@@ -331,11 +276,9 @@ footer {
 .social ul li:nth-child(6) a:hover {
   background: #ff3300; }
 
-/* Css Styling of the Right Section of the CV - Section-Education, Experience and Reference*/
 .heading i {
   color: #ffbf1c;
   margin-right: 5%; }
-
 .heading h2 {
   text-transform: uppercase;
   font-size: 1.4em;
@@ -343,7 +286,6 @@ footer {
   letter-spacing: .5px;
   color: #000;
   line-height: 1.5em; }
-
 .heading hr {
   display: block;
   margin: 1% auto 5% auto;
@@ -351,7 +293,6 @@ footer {
   border-width: 1.5px;
   color: #ffbf1c; }
 
-/* Css Styling of the Right Section of the CV - Section-Education */
 .education {
   display: grid;
   grid-template-rows: 20% repeat(2, auto); }
