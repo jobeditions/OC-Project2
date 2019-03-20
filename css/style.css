@@ -6,50 +6,46 @@ body {
   display: grid;
   grid-template-columns: 230px 4% auto 4%;
   height: 100%; }
+  .wrapper-left {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    background: #ffbf1c; }
+  .wrapper-right {
+    grid-column: 3/4;
+    display: grid;
+    grid-template-rows: repeat(4, auto); }
 
-/* Css Styling of the left Section of the CV - Profile Photo, Contact, About Me and Hobbies */
-.wrapper-left {
-  grid-column: 1/2;
-  display: grid;
-  grid-template-rows: repeat(4, auto);
-  background: #ffbf1c; }
-
-/* CSS Styling of the background Profile Photo Section of the CV */
 header .profile {
   width: 100%;
   height: 100%; }
+  header .profile span {
+    float: left;
+    width: 13.7px;
+    height: 13.7px;
+    border-radius: 20%;
+    border: solid .4px #000;
+    background: url("assets/images/self/ashok9.jpg");
+    background-size: 320px;
+    background-position: 31% 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat; }
 
-header .profile > span {
-  float: left;
-  width: 13.7px;
-  height: 13.7px;
-  border-radius: 20%;
-  border: solid .4px #000;
-  background: url("assets/images/self/ashok9.jpg");
-  background-size: 320px;
-  background-position: 31% 0;
-  background-attachment: fixed;
-  background-repeat: no-repeat; }
-
-/* CSS Styling of the circled Photo Section of the CV */
 header .avatar {
   position: absolute;
   width: 229px;
   padding: 1.75% 0 1.75% 0;
   background: #ffbf1c; }
-
-.photo.avatar img {
-  border-radius: 50%;
-  display: block;
-  width: 80%;
-  margin: 8% auto; }
+  header .avatar img {
+    border-radius: 50%;
+    display: block;
+    width: 80%;
+    margin: 8% auto; }
 
 .avtoggle {
   opacity: 0;
   transition-duration: .1s; }
 
-/* CSS Styling of the Contact Section of the CV */
-/* new Class is used in toggleClass - Jquery . The styling of "li" is changed on click*/
 .new {
   background-color: #FFF !important;
   transform: scale(1.1) rotateX(360deg) translate(5%, 0);
@@ -57,17 +53,16 @@ header .avatar {
 
 .reverse {
   background-color: orange !important;
-  transform: scale(1) rotateX(0deg) translate(0, 0);
-  transition: .5s ease-in; }
+  transform: scale(1.1) rotateX(0deg) translate(5%, 0);
+  transition: .5s ease-out; }
 
-/* Dividing up the space of "UL" into equal dimension grid rows for "LI" elements*/
 .info {
-  height: 87%; }
+  height: 90%; }
   .info ul {
     margin: 0;
     height: 100%;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
     overflow: hidden; }
     .info ul li {
       font-weight: bold;
@@ -76,24 +71,23 @@ header .avatar {
       padding: 2% 0 0 20%;
       background-position: .7em .8em;
       display: block;
-      margin-top: 1%;
-      height: 80%;
+      margin-top: 2%;
+      height: 90%;
       width: 80%; }
       .info ul li:hover {
         background-color: rgba(255, 255, 255, 0.05); }
       .info ul li .ad {
-        background-image: url(/assets/images/icons/icn-ad.gif); }
+        background-image: url(../assets/images/icons/icn-ad.gif); }
       .info ul li .mail {
-        background-image: url(/assets/images/icons/icn-mail.gif); }
+        background-image: url(../assets/images/icons/icn-mail.gif); }
       .info ul li .tel {
-        background-image: url(/assets/images/icons/icn-tel.gif); }
+        background-image: url(../assets/images/icons/icn-tel.gif); }
       .info ul li .web {
-        background-image: url(/assets/images/icons/icn-web.gif); }
+        background-image: url(../assets/images/icons/icn-web.gif); }
       .info ul li .skype {
         padding-bottom: 5%; }
 
-/* CSS Styling of About-Me Section of the CV */
-.about-para {
+.content-info {
   margin: 7.5% 7.5%;
   text-align: center;
   line-height: 1.4em !important; }
@@ -114,19 +108,17 @@ footer {
   border-radius: 100%;
   padding: 12% 12%; }
 
-/* new Class is used in toggleClass - Jquery . The background color of "footer" is changed on click*/
 .new-footer {
   background: rgba(0, 0, 0, 0.5);
   transition: .5s; }
 
-/* new Class is used in toggleClass - Jquery . The stylings of hobby icons are changed on click*/
 .new-hobbies {
   background: #ffee10;
   transform: scale(1.3) rotateY(540deg);
   transition: all 2s ease-in;
   border: solid .21em #333;
-  box-shadow: 0 0 1em #ffee10;
-  text-shadow: 0 0 1em #ffee10;
+  box-shadow: 0 0 1.5em #ffee10;
+  text-shadow: 0 0 1.5em #ffee10;
   border-radius: 100%; }
 
 .reverse-hobbies {
@@ -139,7 +131,6 @@ footer {
   width: 100%;
   height: auto; }
 
-/* CSS Styling of the banners "Contact" "About Me" Hobbies" along with Animation */
 .left-banner {
   position: relative;
   text-align: center;
@@ -166,13 +157,6 @@ footer {
     background-position: 5000%; }
   100% {
     background-position: 50000%; } }
-/* Css Styling of the Right Section of the CV - Self, Social, Education ,Experience and Reference */
-.wrapper-right {
-  grid-column: 3/4;
-  display: grid;
-  grid-template-rows: repeat(4, auto); }
-
-/*Dividing the Self Section and Social Section into grids */
 .introduction {
   display: grid;
   grid-template-columns: 1.7fr 2fr; }
@@ -182,23 +166,17 @@ footer {
   display: grid;
   justify-self: center;
   align-self: center; }
-  .self .self-inner h1 {
+  .self .self-inner h1, .self .self-inner h2 {
     text-transform: uppercase;
     font-size: 2.7em;
     font-weight: 500;
     letter-spacing: .5px;
     line-height: 1.5em;
-    color: #ffbf1c;
     display: none; }
+  .self .self-inner h1 {
+    color: #ffbf1c; }
   .self .self-inner h2 {
-    text-transform: uppercase;
-    font-size: 2.7em;
-    font-weight: 500;
-    letter-spacing: 1px;
-    line-height: 1.5em;
-    margin-left: 5%;
-    color: #000;
-    display: none; }
+    margin-left: 5%; }
   .self .self-inner .name-2 {
     font-size: 1.2em  !important;
     font-weight: 550  !important;
@@ -218,44 +196,44 @@ footer {
     list-style: none;
     padding: 0;
     margin-left: 5.5%; }
-    .social ul li a {
-      color: rgba(38, 38, 38, 0.85);
-      background-color: rgba(255, 191, 28, 0.8);
-      width: 112%;
-      height: 112%;
-      display: block;
-      text-align: center;
-      transform: rotate(-20deg) skew(2deg);
-      transition: .5s;
-      box-shadow: -0.5em 0.5em 0.5em rgba(0, 0, 0, 0.5); }
-      .social ul li a:hover {
-        transition: all .5s ease-out;
-        box-shadow: -0.9em 0.9em 0.9em rgba(0, 0, 0, 0.5);
-        transform: scale(1.2) rotate(-20deg) skew(2deg) translate(-5%, -5%); }
-      .social ul li a:before {
-        content: '';
-        position: absolute;
-        background: #b1b1b1;
-        top: .25em;
-        left: -.4em;
-        width: .4em;
-        height: 100%;
-        transform: rotate(0deg) skewY(-45deg);
-        transition: .5s; }
-      .social ul li a:after {
-        content: '';
-        position: absolute;
-        background: #b1b1b1;
-        bottom: -.3em;
-        left: -.1em;
-        width: 100%;
-        height: .4em;
-        transform: rotate(0deg) skewX(-45deg);
-        transition: .5s; }
-      .social ul li a i {
-        margin-top: .1em; }
-        .social ul li a i:hover {
-          color: #FFF; }
+  .social ul a {
+    color: rgba(38, 38, 38, 0.85);
+    background-color: rgba(255, 191, 28, 0.8);
+    width: 112%;
+    height: 112%;
+    display: block;
+    text-align: center;
+    transform: rotate(-20deg) skew(2deg);
+    transition: .5s;
+    box-shadow: -0.5em 0.5em 0.5em rgba(0, 0, 0, 0.5); }
+    .social ul a:hover {
+      transition: all .5s ease-out;
+      box-shadow: -0.9em 0.9em 0.9em rgba(0, 0, 0, 0.5);
+      transform: scale(1.2) rotate(-20deg) skew(2deg) translate(-5%, -5%); }
+    .social ul a::before {
+      content: '';
+      position: absolute;
+      background: #b1b1b1;
+      top: .25em;
+      left: -.4em;
+      width: .4em;
+      height: 100%;
+      transform: rotate(0deg) skewY(-45deg);
+      transition: .5s; }
+    .social ul a::after {
+      content: '';
+      position: absolute;
+      background: #b1b1b1;
+      bottom: -.3em;
+      left: -.1em;
+      width: 100%;
+      height: .4em;
+      transform: rotate(0deg) skewX(-45deg);
+      transition: .5s; }
+  .social ul i {
+    margin-top: .1em; }
+    .social ul i:hover {
+      color: #FFF; }
 
 /*Changing background color of the Social buttons on hover */
 .social ul li:nth-child(1) a:hover {

@@ -15,88 +15,102 @@ body {
 .wrapper {
     display: grid;
     grid-template-columns: 230px 4% auto 4%;
-    height: 100%
-}
+    height: 100%;
 
-/* Css Styling of the left Section of the CV - Profile Photo, Contact, About Me and Hobbies */
+//Css Styling of the left Section of the CV 
 
-.wrapper-left {
-    grid-column: 1/2;
-    display: grid;
-    grid-template-rows: repeat(4, auto);
-    background: $left-section-background;
-}
+    &-left {
+         grid-column: 1/2;
+         display: grid;
+         grid-template-rows: repeat(4, auto);
+         background: $left-section-background;
+           }
 
-/* CSS Styling of the background Profile Photo Section of the CV */
+
+// Css Styling of the Right Section of the CV 
+
+    &-right {
+        grid-column: 3/4;
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+          } 
+
+     }        
+
+// CSS Styling of the background Profile Photo Section of the CV 
 
 
 header .profile{
     width: 100%;
     height: 100%;
-}
-header .profile>span{
-    float: left;
-    width: 13.7px;
-    height: 13.7px;
-    border-radius: 20%;
-    border: solid .4px #000;
-    background: url("assets/images/self/ashok9.jpg");
-    background-size: 320px;
-    background-position: 31% 0;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
 
-/* CSS Styling of the circled Photo Section of the CV */
+    span{
+        float: left;
+        width: 13.7px;
+        height: 13.7px;
+        border-radius: 20%;
+        border: solid .4px #000;
+        background: url("assets/images/self/ashok9.jpg");
+        background-size: 320px;
+        background-position: 31% 0;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        }
+
+      }
+
+// CSS Styling of the circled Photo Section of the CV 
 
  header .avatar {
     position: absolute;
     width: 229px;
     padding:1.75% 0 1.75% 0;
     background: $left-section-background;
-}
 
-.photo.avatar img{
-    border-radius: 50%;
-    display: block;
-    width: 80%;
-    margin:8% auto;
+    img{
+        border-radius: 50%;
+        display: block;
+        width: 80%;
+        margin:8% auto;
+        }
+
     }
+//Toggling the opacity of the avatar image on click with Jquery
 
 .avtoggle{
     opacity: 0;
     transition-duration : .1s;
 }
 
-/* CSS Styling of the Contact Section of the CV */
+// CSS Styling of the Contact Section of the CV 
 
-/* new Class is used in toggleClass - Jquery . The styling of "li" is changed on click*/
+// new and reverse Class is used in toggleClass - Jquery . The styling of "li" is changed on click
+
 
 .new{
-    background-color: #FFF !important;
-    transform: scale(1.1) rotateX(360deg)translate(5%, 0);
-    transition: .5s ease-in;
-
+  background-color: #FFF !important;
+  transform: scale(1.1) rotateX(360deg)translate(5%, 0);
+  transition: .5s ease-in;
 }
 
 .reverse{
     background-color: orange !important;
-    transform: scale(1) rotateX(0deg)translate(0, 0);
-    transition: .5s ease-in;
+     transform: scale(1.1) rotateX(0deg)translate(5%, 0);
+     transition: .5s ease-out;
 
 }
 
-/* Dividing up the space of "UL" into equal dimension grid rows for "LI" elements*/
+// Dividing up the space of "UL" into equal dimension grid rows for "LI" elements
 
 
 .info{
-    height: 87%;
+    height: 90%;
 
    ul {
       margin: 0;
       height: 100%;
       display:grid;
-      grid-template-rows:1fr 1fr 1fr 1fr;
+      grid-template-rows:repeat(4,1fr);
       overflow: hidden;
 
       li {
@@ -106,8 +120,8 @@ header .profile>span{
          padding: 2% 0 0 20%;
          background-position: .7em .8em;
          display:block;
-         margin-top: 1%;
-         height: 80%;
+         margin-top: 2%;
+         height: 90%;
          width: 80%;
 
          &:hover {
@@ -115,16 +129,16 @@ header .profile>span{
              }
 
          .ad {
-              background-image: url(/assets/images/icons/icn-ad.gif);
+              background-image: url(../assets/images/icons/icn-ad.gif);
               }
         .mail {
-              background-image:url(/assets/images/icons/icn-mail.gif);
+              background-image:url(../assets/images/icons/icn-mail.gif);
               }
         .tel {
-              background-image:url(/assets/images/icons/icn-tel.gif);
+              background-image:url(../assets/images/icons/icn-tel.gif);
              }
         .web {
-              background-image:url(/assets/images/icons/icn-web.gif);
+              background-image:url(../assets/images/icons/icn-web.gif);
              }
         .skype {
              padding-bottom: 5%;
@@ -134,13 +148,15 @@ header .profile>span{
      }
   } 
 
-/* CSS Styling of About-Me Section of the CV */
+// CSS Styling of About-Me Section of the CV 
 
-.about-para{
-   margin: 7.5% 7.5%;
-   text-align: center;
-   line-height: 1.4em !important;
-}
+
+  .content-info{
+      margin: 7.5% 7.5%;
+      text-align: center;
+      line-height: 1.4em !important;
+     }
+  
 /* CSS Styling of the Hobbies Section of the CV */
 
 footer {
@@ -162,7 +178,7 @@ footer {
     padding: 12% 12%;
 }
 
-/* new Class is used in toggleClass - Jquery . The background color of "footer" is changed on click*/
+// new Class is used in toggleClass - Jquery . The background color of "footer" is changed on click
 
 .new-footer {
    background: rgba(0,0,0,.5);
@@ -170,15 +186,15 @@ footer {
    }
 
 
-/* new Class is used in toggleClass - Jquery . The stylings of hobby icons are changed on click*/
+// new Class is used in toggleClass - Jquery . The stylings of hobby icons are changed on click
 
 .new-hobbies {
     background: $hobbies-onclick-color;
     transform: scale(1.3) rotateY(540deg);
     transition: all 2s ease-in;
     border: solid .21em #333;
-    box-shadow: (0 0 1em $hobbies-onclick-color);
-    text-shadow: (0 0 1em $hobbies-onclick-color);
+    box-shadow: (0 0 1.5em $hobbies-onclick-color);
+    text-shadow: (0 0 1.5em $hobbies-onclick-color);
     border-radius: 100%;
 }
 .reverse-hobbies {
@@ -194,7 +210,7 @@ footer {
 }
 
 
-/* CSS Styling of the banners "Contact" "About Me" Hobbies" along with Animation */
+// CSS Styling of the banners "Contact" "About Me" Hobbies" along with Animation
 
 
 .left-banner{
@@ -239,15 +255,9 @@ footer {
   }  
 }
  
-/* Css Styling of the Right Section of the CV - Self, Social, Education ,Experience and Reference */
+// Css Styling of the Right Section of the CV - Self, Social, Education ,Experience and Reference 
 
-.wrapper-right {
-    grid-column: 3/4;
-    display: grid;
-    grid-template-rows: repeat(4, auto);
-}
-
-/*Dividing the Self Section and Social Section into grids */
+// Dividing the Self Section and Social Section into grids
 
 .introduction {
     display: grid;
@@ -262,26 +272,22 @@ footer {
       align-self: center;
 
       .self-inner {
-          h1 {
+        h1, h2{
              text-transform: uppercase;
              font-size: 2.7em;
              font-weight: 500;
              letter-spacing: .5px;
              line-height: 1.5em;
-             color: $left-section-background;
              display: none;
             }
 
+          h1 {
+             color: $left-section-background;
+            }
+
           h2 {
-             text-transform: uppercase;
-             font-size: 2.7em;
-             font-weight: 500;
-             letter-spacing: 1px;
-             line-height: 1.5em;
              margin-left: 5%;
-             color: #000;
-             display: none;
-             }
+            }
 
      .name-2 {
              font-size: 1.2em  !important;
@@ -294,7 +300,7 @@ footer {
                 text-decoration: underline !important;
                }
 
-              }
+             }
 
             }
           }
@@ -317,32 +323,32 @@ footer {
               list-style: none;
               padding: 0;
               margin-left: 5.5%;
-
+              }
 //Basic Styling of the Social buttons 
 
-              a {
-                color:rgba(38, 38, 38,.85);
-                background-color: rgba(255,191,28,.8);
-                width: 112%;
-                height: 112%;
-                display:block;
-                text-align: center;
-                transform: rotate(-20deg) skew(2deg);
-                transition: .5s;
-                box-shadow: -.5em .5em .5em rgba(0,0,0,.5);
+           a {
+              color:rgba(38, 38, 38,.85);
+              background-color: rgba(255,191,28,.8);
+              width: 112%;
+              height: 112%;
+              display:block;
+              text-align: center;
+              transform: rotate(-20deg) skew(2deg);
+              transition: .5s;
+              box-shadow: -.5em .5em .5em rgba(0,0,0,.5);
                 
 
               //Creating styles  of the Social buttons on HOVER
 
-                 &:hover {
-                         transition: all .5s ease-out;
-                         box-shadow: -.9em .9em .9em rgba(0,0,0,.5);
-                         transform: scale(1.2) rotate(-20deg) skew(2deg) translate(-5%, -5%);
-                         }
+              &:hover {
+                      transition: all .5s ease-out;
+                      box-shadow: -.9em .9em .9em rgba(0,0,0,.5);
+                      transform: scale(1.2) rotate(-20deg) skew(2deg) translate(-5%, -5%);
+                      }
 
              // Creating the side frames of the Social buttons 
 
-               &:before {
+              &::before {
                         content: '';
                         position: absolute;
                         background: #b1b1b1;
@@ -354,7 +360,7 @@ footer {
                         transition: .5s;
                         }
 
-                &:after {
+              &::after  {
                         content: '';
                         position: absolute;
                         background: #b1b1b1;
@@ -366,20 +372,19 @@ footer {
                         transition: .5s;
                         }
 
-                        i {
-                           margin-top:.1em;
+            }
+
+          i {
+              margin-top:.1em;
                         
-                           //Changing text color of the Social buttons on hover 
+              //Changing text color of the Social buttons on hover 
 
-                           &:hover {
-                                   color: $white;
-                                   }
-                          }
-                  }
+              &:hover {
+                      color: $white;
+                      }
+            }
+        }
 
-                }
-
-              }
 /*Changing background color of the Social buttons on hover */
 
 .social ul li:nth-child(1) a:hover{
@@ -424,7 +429,7 @@ footer {
              margin: 1% auto 5% auto;
              border-style: solid;
              border-width: 1.5px;
-             color: #ffbf1c;
+             color: $left-section-background;
           }
 
         }
