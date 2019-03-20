@@ -27,8 +27,8 @@ header .profile{
 }
 header .profile>span{
     float: left;
-    width: 14px;
-    height: 14px;
+    width: 13.7px;
+    height: 13.7px;
     border-radius: 20%;
     border: solid .4px #000;
     background: url("assets/images/self/ashok9.jpg");
@@ -79,54 +79,8 @@ header .profile>span{
 
 /* Dividing up the space of "UL" into equal dimension grid rows for "LI" elements*/
 
-.info ul {
-    height: 100%;
-    display:grid;
-    grid-template-rows: repeat(5, auto);
-    overflow: hidden; 
-}
 
-.info ul li {
-    font-weight: bold;
-    background-color: orange;
-    background-repeat: no-repeat;
-    padding: 2% 0 0 20%;
-    background-position: .7em .8em;
-    display:block;
-    margin: 2% 0;
-    height: 85%;
-    width: 80%;
-}
-
-.info li:hover {
-    background-color: rgba(255,255,255,.05);
-}
-
-/*The icons are placed on Contact section*/
-
-.info ul li.ad {
-    background-image: url(assets/images/icons/icn-ad.gif);
-   }
-
-.info ul li.mail {
-    background-image:url(assets/images/icons/icn-mail.gif);
-    }
-
-.info ul li.tel {
-    background-image:url(assets/images/icons/icn-tel.gif);
-}
-
-.info ul li.web {
-    background-image:url(assets/images/icons/icn-web.gif);
-}
-
-.info ul li.skype {
-    background-image:;
-    padding-bottom: 2%;
-}
-
-
-/*.info{
+.info{
     height: 87%;
 
    ul {
@@ -135,7 +89,6 @@ header .profile>span{
       display:grid;
       grid-template-rows:1fr 1fr 1fr 1fr;
       overflow: hidden;
-      }
 
       li {
          font-weight: bold;
@@ -148,30 +101,29 @@ header .profile>span{
          height: 80%;
          width: 80%;
 
-         :hover {
+         &:hover {
               background-color: rgba(255,255,255,.05);
              }
 
          .ad {
-              background-image: url(assets/images/icons/icn-ad.gif);
+              background-image: url(/assets/images/icons/icn-ad.gif);
               }
         .mail {
-              background-image:url(assets/images/icons/icn-mail.gif);
+              background-image:url(/assets/images/icons/icn-mail.gif);
               }
         .tel {
-              background-image:url(assets/images/icons/icn-tel.gif);
+              background-image:url(/assets/images/icons/icn-tel.gif);
              }
         .web {
-              background-image:url(assets/images/icons/icn-web.gif);
+              background-image:url(/assets/images/icons/icn-web.gif);
              }
         .skype {
-             background-image:;
              padding-bottom: 5%;
             }
 
         }
-      }
-    } */
+     }
+  } 
 
 /* CSS Styling of About-Me Section of the CV */
 
@@ -204,7 +156,7 @@ footer {
 /* new Class is used in toggleClass - Jquery . The background color of "footer" is changed on click*/
 
 .new-footer {
-   background: rgb(0,0,0,.5);
+   background: rgba(0,0,0,.5);
    transition: .5s;
    }
 
@@ -231,58 +183,6 @@ footer {
     width: 100%;
     height: auto;
 }
-
-/*
-.swim::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ffee10;
-    border-radius: 100%;
-    transition: .5s;
-    }
-.cycling::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ffee10;
-    border-radius: 100%;
-    transition: .5s;
-    }
-
-  .table-tennis::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ffee10;
-    border-radius: 100%;
-    transition: .5s;
-    }
-    /*.swim:hover:before {
-     transform: scale(1.1);
-     box-shadow: (0 0 1em #ffee10);
-     display: block;
-    }
-    .cycling:hover:before {
-     transform: scale(1.1);
-     box-shadow: (0 0 1em #ffee10);
-     display: block;
-    }
-    .table-tennis:hover:before {
-     transform: scale(1.1);
-     box-shadow: (0 0 1em #ffee10);
-     display: block;
-    }*/
 
 
 /* CSS Styling of the banners "Contact" "About Me" Hobbies" along with Animation */
@@ -335,7 +235,7 @@ footer {
 .wrapper-right {
     grid-column: 3/4;
     display: grid;
-    grid-template-rows: .5fr repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
 }
 
 /*Dividing the Self Section and Social Section into grids */

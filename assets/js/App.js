@@ -93,7 +93,7 @@ $('.selector').on('click', function () {
   window.addEventListener('load',function () {
       var content = '';
       $("header").prepend('<div class="profile"></div>');
-      for (var i = 0; i < 342; i++) {
+      for (var i = 0; i < 270; i++) {
        content += "<span></span>" ;
        }
       $(".profile").wrapInner(content);
@@ -101,6 +101,10 @@ $('.selector').on('click', function () {
 
 $('.avatar').on('click', function () {
   $(this).toggleClass('avtoggle');
+});
+
+$('.left-banner').on('click', function () {
+  $('.display-nav').toggleClass('display-navbar');
 });
 
 
