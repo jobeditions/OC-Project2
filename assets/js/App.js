@@ -56,16 +56,16 @@ $('.selected li').on('click', function () {
 
 $('.selector').on('click', function () {
        
-        if ($(this).hasClass('new-hobbies')){
-            $(this).removeClass('new-hobbies');
-            $(this).addClass('reverse-hobbies');
-            if(!$(".swim").hasClass('new-hobbies') && !$(".cycling").hasClass('new-hobbies') && !$(".table-tennis").hasClass('new-hobbies')){
-            $('.block-hobbies').removeClass('new-footer');
+        if ($(this).hasClass('hobbies-new')){
+            $(this).removeClass('hobbies-new');
+            $(this).addClass('hobbies-reverse');
+            if(!$(".swim").hasClass('hobbies-new') && !$(".cycling").hasClass('hobbies-new') && !$(".table-tennis").hasClass('hobbies-new')){
+            $('.block-hobbies').removeClass('hobbies-footer').css('transition', '.5s');
           }
         } else {
-        	  $(this).removeClass('reverse-hobbies');
-            $(this).addClass('new-hobbies');
-            $('.block-hobbies').addClass('new-footer');
+        	  $(this).removeClass('hobbies-reverse');
+            $(this).addClass('hobbies-new');
+            $('.block-hobbies').addClass('hobbies-footer');
         }
     });
 
