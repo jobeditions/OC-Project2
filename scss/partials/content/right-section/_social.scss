@@ -1,0 +1,89 @@
+/ Css Styling of the Right Section of the CV - Section Social
+
+//Positioning and Aligning Social Buttons Vertically
+
+.social ul {
+   list-style: none;
+   position: relative;
+   top: 5%;
+   margin-left: 10%;
+   padding: 0;
+   display: flex;
+
+      li {
+        list-style: none;
+        padding: 0;
+        margin-left: 5.5%;
+
+        /*Changing background color of the Social buttons on hover */
+
+          &:nth-child(1) a:hover {
+             background: #1ab7ea;
+          }
+          &:nth-child(2) a:hover{
+             background: #55acee;
+          }
+          &:nth-child(3) a:hover{
+             background: #0077B5;
+          }
+          &:nth-child(4) a:hover{
+             background: #02b875;
+          }
+          &:nth-child(5) a:hover{
+             background: #3aaf85;
+          }
+          &:nth-child(6) a:hover{
+             background: #ff3300;
+          }
+
+      }
+//Basic Styling of the Social buttons
+
+           a {
+              color:rgba(38, 38, 38,.85);
+              background-color: rgba(255,191,28,.8);
+              width: 112%;
+              height: 112%;
+              display:block;
+              text-align: center;
+              transform: rotate(-20deg) skew(2deg);
+              transition: .5s;
+              box-shadow: -.5em .5em .5em rgba(0,0,0,.5);
+
+              //Creating styles  of the Social buttons on HOVER
+
+              &:hover {
+                transition: all .5s ease-out;
+                box-shadow: -.9em .9em .9em rgba(0,0,0,.5);
+                transform: scale(1.2) rotate(-20deg) skew(2deg) translate(-5%, -5%);
+                }
+
+             // Creating the side frames of the Social buttons
+
+              @include social-buttons-before{
+                  top: .25em;
+                  left: -.4em;
+                  width: .4em;
+                  height: 100%;
+                  transform: rotate(0deg) skewY(-45deg);
+                  }
+              @include social-buttons-after{
+                  bottom: -.3em;
+                  left: -.1em;
+                  width: 100%;
+                  height: .4em;
+                  transform: rotate(0deg) skewX(-45deg);
+                  }
+
+            }
+
+          i {
+              margin-top:.1em;
+
+              //Changing text color of the Social buttons on hover
+
+              &:hover {
+                      color: $white;
+                      }
+            }
+        }
