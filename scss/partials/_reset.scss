@@ -2,7 +2,7 @@
 //  Default - reset - styles
 // =========================================
 
-:root { font: 13px / 1.4 "Roboto", sans-serif; } /* or html */
+:root { font: 13px / 1.4 $font-stack-primary; } /* or html */
 
 
  body, body * {
