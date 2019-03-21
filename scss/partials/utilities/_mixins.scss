@@ -2,7 +2,7 @@
 //  Mixins
 // =========================================
 @mixin wrapper{
-  
+
 }
 @mixin heading-name($c,$m) {
   text-transform: uppercase;
@@ -29,24 +29,17 @@
    width: 100%;
    height: auto;
 }
-@mixin social-buttons-after{
-  &::after{
+@mixin social-buttons($t,$l,$b,$w,$h,$tr){
   content: '';
   position: absolute;
   background: $soc-btn-sides;
   transition: .5s;
-  @content;
-   }
-}
-
-@mixin social-buttons-before{
-  &::before{
-  content: '';
-  position: absolute;
-  background: $soc-btn-sides;
-  transition: .5s;
-  @content;
-  }
+  top: $t;
+  left: $l;
+  bottom: $b;
+  width: $w;
+  height: $h;
+  transform: $tr;
 }
 
 @mixin centred{

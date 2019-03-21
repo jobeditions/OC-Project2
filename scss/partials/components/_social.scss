@@ -1,4 +1,4 @@
-/ Css Styling of the Right Section of the CV - Section Social
+// Css Styling of the Right Section of the CV - Section Social
 
 //Positioning and Aligning Social Buttons Vertically
 
@@ -60,19 +60,11 @@
 
              // Creating the side frames of the Social buttons
 
-              @include social-buttons-before{
-                  top: .25em;
-                  left: -.4em;
-                  width: .4em;
-                  height: 100%;
-                  transform: rotate(0deg) skewY(-45deg);
+              &::before{
+                @include social-buttons(.25em,-.4em,0,.4em,100%,rotate(0deg) skewY(-45deg)) ;
                   }
-              @include social-buttons-after{
-                  bottom: -.3em;
-                  left: -.1em;
-                  width: 100%;
-                  height: .4em;
-                  transform: rotate(0deg) skewX(-45deg);
+              &::after{
+                @include social-buttons(2.3em,-.1em,-.3em,100%,.4em,rotate(0deg) skewX(-45deg));
                   }
 
             }
