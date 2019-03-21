@@ -14,15 +14,12 @@
     .self-inner {
 
        h1 {
-         @include heading-name{
-           color: $left-section-background;
-          }
+         @include heading-name($left-section-background,0);
+
        }
 
       h2 {
-        @include heading-name{
-          margin-left: 5%;
-        }
+        @include heading-name($black,5%);
       }
 
      .name-2 {

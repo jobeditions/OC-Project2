@@ -2,14 +2,15 @@
 //  Mixins
 // =========================================
 
-@mixin heading-name {
+@mixin heading-name($c,$m) {
   text-transform: uppercase;
   font-size: 2.7em;
   font-weight: 500;
   letter-spacing: .5px;
   line-height: 1.5em;
   display: none;
-  @content;
+  color: $c;
+  margin-left: $m;
 }
 @mixin contact-li($imag){
   background-image: $imag;
