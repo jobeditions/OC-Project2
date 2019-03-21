@@ -1,3 +1,41 @@
+:root {
+  font: 13px / 1.4 "Roboto", sans-serif; }
+
+/* or html */
+body, body * {
+  font: inherit;
+  vertical-align: baseline;
+  border: unset;
+  margin: unset;
+  box-sizing: unset;
+  padding: unset;
+  font-size: unset;
+  color: unset;
+  text-decoration: unset; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 body {
   width: 55%;
   margin: auto; }
@@ -83,6 +121,8 @@ header .avatar {
       background-image: url(../assets/images/icons/icn-web.gif); }
     .info ul li .skype {
       padding-bottom: 5%; }
+    .info ul li p {
+      height: 100%; }
 
 .content-info {
   margin: 7.5% 7.5%;
@@ -273,5 +313,30 @@ footer {
 .content {
   display: grid;
   grid-template-columns: 1fr 2fr; }
+
+section {
+  border-style: solid;
+  border-width: 1px;
+  border-color: red; }
+
+div {
+  border-style: solid;
+  border-width: 1px;
+  border-color: blue; }
+
+img {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black; }
+
+li {
+  border-style: solid;
+  border-width: 1px;
+  border-color: green; }
+
+a {
+  border-style: solid;
+  border-width: 1px;
+  border-color: pink; }
 
 /*# sourceMappingURL=style.css.map */
