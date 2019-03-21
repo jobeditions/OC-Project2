@@ -23,20 +23,20 @@
          width: 80%;
          //Changing styles of li on hover
          &:hover {
-              background-color: rgba(255,255,255,.05);
+              background-color: rgba($white,0.8);
              }
 
          .ad {
-              background-image: url(../assets/images/icons/icn-ad.gif);
+              @include contact-li(url(../assets/images/icons/icn-ad.gif));
               }
         .mail {
-              background-image:url(../assets/images/icons/icn-mail.gif);
+              @include contact-li(url(../assets/images/icons/icn-mail.gif));
               }
         .tel {
-              background-image:url(../assets/images/icons/icn-tel.gif);
+              @include contact-li(url(../assets/images/icons/icn-tel.gif));
              }
         .web {
-              background-image:url(../assets/images/icons/icn-web.gif);
+             @include contact-li(url(../assets/images/icons/icn-web.gif));
              }
         .skype {
              padding-bottom: 5%;

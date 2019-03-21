@@ -3,25 +3,28 @@
 // =========================================
 
 @mixin heading-name {
-    text-transform: uppercase;
-    font-size: 2.7em;
-    font-weight: 500;
-    letter-spacing: .5px;
-    line-height: 1.5em;
-    display: none;
-    @content;
+  text-transform: uppercase;
+  font-size: 2.7em;
+  font-weight: 500;
+  letter-spacing: .5px;
+  line-height: 1.5em;
+  display: none;
+  @content;
+}
+@mixin contact-li($imag){
+  background-image: $imag;
 }
 
 @mixin hobbies{
-    border: solid .19em #333;
-    border-radius: 100%;
-    padding: 12% 12%;
+   border: solid .19em #333;
+   border-radius: 100%;
+   padding: 12% 12%;
 }
 
 @mixin hobbies-img{
-    display:block;
-    width: 100%;
-    height: auto;
+   display:block;
+   width: 100%;
+   height: auto;
 }
 @mixin social-buttons-after{
   &::after{
