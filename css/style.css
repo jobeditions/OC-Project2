@@ -63,7 +63,7 @@ header .profile {
     height: 13.7px;
     border-radius: 20%;
     border: solid .4px #000;
-    background: url("assets/images/self/ashok9.jpg");
+    background: url("../assets/images/self/ashok9.jpg");
     background-size: 320px;
     background-position: 31% 0;
     background-attachment: fixed;

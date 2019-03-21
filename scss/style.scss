@@ -2,18 +2,17 @@
 //  Partials - Import
 // =========================================
 
-@import 'partials/debugger',
-        'partials/reset',
-        'partials/variables',
-        'partials/mixins',
-        'partials/main-style',
+@import 'partials/base/debugger',
+        'partials/base/reset',
+        'partials/utilities/variables',
+        'partials/utilities/mixins',
+        'partials/components/banner',
+        'partials/components/social',
+        'partials/components/heading-sec',
         'partials/layout/wrapper',
-        'partials/layout/left-section/header',
-        'partials/layout/left-section/banner',
-        'partials/layout/left-section/contact',
-        'partials/layout/left-section/about-me',
-        'partials/layout/left-section/footer',
-        'partials/layout/right-section/intro',
-        'partials/layout/right-section/social',
-        'partials/layout/right-section/heading-sec',
-        'partials/layout/right-section/education';
+        'partials/layout/header',
+        'partials/layout/contact',
+        'partials/layout/about-me',
+        'partials/layout/footer',
+        'partials/layout/intro',
+        'partials/layout/education';

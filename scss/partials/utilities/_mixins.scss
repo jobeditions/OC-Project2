@@ -1,7 +1,9 @@
 // =========================================
 //  Mixins
 // =========================================
-
+@mixin wrapper{
+  
+}
 @mixin heading-name($c,$m) {
   text-transform: uppercase;
   font-size: 2.7em;
