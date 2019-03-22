@@ -12,3 +12,13 @@ $banner-left-text: #ffdc2a;
 $soc-btn-sides: #b1b1b1;
 
 $font-stack-primary: "'Roboto',sans-serif";
+
+//map for social buttons - hover
+$social: (
+  'facebook': #1ab7ea,
+  'twitter': #55acee,
+  'linkedin': #0077B5,
+  'github': #02b875,
+  'print': #3aaf85,
+  'contact': #ff3300,
+);

@@ -18,22 +18,22 @@
         /*Changing background color of the Social buttons on hover */
 
           &:nth-child(1) a:hover {
-             background: #1ab7ea;
+             background: map-get($social,'facebook');
           }
           &:nth-child(2) a:hover{
-             background: #55acee;
+             background: map-get($social,'twitter');
           }
           &:nth-child(3) a:hover{
-             background: #0077B5;
+             background: map-get($social,'linkedin');
           }
           &:nth-child(4) a:hover{
-             background: #02b875;
+             background: map-get($social,'github');
           }
           &:nth-child(5) a:hover{
-             background: #3aaf85;
+             background: map-get($social,'print');
           }
           &:nth-child(6) a:hover{
-             background: #ff3300;
+             background: map-get($social,'contact');
           }
 
       }
@@ -61,10 +61,10 @@
              // Creating the side frames of the Social buttons
 
               &::before{
-                @include social-buttons(.25em,-.4em,0,.4em,100%,rotate(0deg) skewY(-45deg)) ;
+                @include social-buttons($top: .2em,$left: -.4em,$bottom: 0,$width: .4em,$height: 100%,$transform: rotate(0deg) skewY(-45deg)) ;
                   }
               &::after{
-                @include social-buttons(2.3em,-.1em,-.3em,100%,.4em,rotate(0deg) skewX(-45deg));
+                @include social-buttons($top: 2.3em,$left: -.1em,$bottom: -.3em,$width: 100%,$height: .4em,$transform: rotate(0deg) skewX(-45deg));
                   }
 
             }

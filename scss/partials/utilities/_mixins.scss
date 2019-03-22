@@ -4,15 +4,15 @@
 @mixin wrapper{
 
 }
-@mixin heading-name($c,$m) {
+@mixin heading-name($col,$ml) {
   text-transform: uppercase;
   font-size: 2.7em;
   font-weight: 500;
   letter-spacing: .5px;
   line-height: 1.5em;
   display: none;
-  color: $c;
-  margin-left: $m;
+  color: $col;
+  margin-left: $ml;
 }
 @mixin contact-li($imag){
   background-image: $imag;
@@ -29,17 +29,22 @@
    width: 100%;
    height: auto;
 }
-@mixin social-buttons($t,$l,$b,$w,$h,$tr){
+@mixin social-buttons($top: null,
+                      $left: null,
+                      $bottom: null,
+                      $width: null,
+                      $height:null,
+                      $transform: null){
   content: '';
   position: absolute;
   background: $soc-btn-sides;
   transition: .5s;
-  top: $t;
-  left: $l;
-  bottom: $b;
-  width: $w;
-  height: $h;
-  transform: $tr;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  width: $width;
+  height: $height;
+  transform: $transform;
 }
 
 @mixin centred{
