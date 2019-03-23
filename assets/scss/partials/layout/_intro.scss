@@ -1,0 +1,39 @@
+// Dividing the Self Section and Social Section into grids
+
+.introduction {
+    display: grid;
+    grid-template-columns: 1.7fr 2fr;
+}
+
+// Css Styling of the Right Section of the CV - Section Self
+
+.self {
+
+  @include centred;
+
+    .self-inner {
+
+       h1 {
+         @include heading-name($left-section-background,0);
+
+       }
+
+      h2 {
+        @include heading-name($black,5%);
+      }
+
+     .name-2 {
+        font-size: 1.2em  !important;
+        font-weight: 550  !important;
+        line-height: 1.5em !important;
+        display: none;
+
+        span {
+          text-decoration: underline !important;
+        }
+
+    }
+
+  }
+
+}

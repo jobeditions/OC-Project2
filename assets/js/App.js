@@ -3,12 +3,12 @@
     var delay = $('h1.name').text().length * speed + speed;
     var $newdiv1 = $( "<div class='profile'></div>");
 
-//Declaring the the function typeEffect  
+//Declaring the the function typeEffect
 
 function typeEffect(element, speed) {
 	var text = $(element).text();
 	$(element).html('');
-	
+
 	var i = 0;
 	var timer = setInterval(function() {
 					if (i < text.length) {
@@ -24,7 +24,7 @@ function typeEffect(element, speed) {
 /*function typeBold(element, speed) {
   var text = $(element).text();
   $(element).html(text);
-  
+
   var i = 0;
   var timer = setInterval(function() {
           if (i < text.length) {
@@ -42,20 +42,20 @@ function typeEffect(element, speed) {
 // Contact -Section - Toggling the CSS classes conditionally
 
 $('.selected li').on('click', function () {
-       
-        if ($(this).hasClass('new')){
-            $(this).removeClass('new');
-            $(this).addClass('reverse');
+
+        if ($(this).hasClass('contact-new')){
+            $(this).removeClass('contact-new');
+            $(this).addClass('contact-reverse');
         } else {
-        	$(this).removeClass('reverse');
-            $(this).addClass('new');
+        	$(this).removeClass('contact-reverse');
+            $(this).addClass('contact-new');
         }
     });
 
 // Hobbies -Section - Toggling the CSS classes conditionally
 
 $('.selector').on('click', function () {
-       
+
         if ($(this).hasClass('hobbies-new')){
             $(this).removeClass('hobbies-new');
             $(this).addClass('hobbies-reverse');
@@ -71,13 +71,13 @@ $('.selector').on('click', function () {
 
 
 
-// Profile -Section 
+// Profile -Section
 
  $('.header').on('click', function () {
    $('.photo').toggleClass('nodisplay-photo');
  });
 
-// Self -Section 
+// Self -Section
   $('h1.name').css('display','inline-block');
   typeEffect($('h1.name'), speed);
   setTimeout(function(){
@@ -99,6 +99,7 @@ $('.selector').on('click', function () {
       $(".profile").wrapInner(content);
       });
 
+
 $('.avatar').on('click', function () {
   $(this).toggleClass('avtoggle');
 });
@@ -106,6 +107,3 @@ $('.avatar').on('click', function () {
 $('.left-banner').on('click', function () {
   $('.display-nav').toggleClass('display-navbar');
 });
-
-
-

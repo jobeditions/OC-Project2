@@ -1,0 +1,8 @@
+
+.swim,.cycling,.table-tennis {
+    @include hobbies;
+
+    img{
+    @include hobbies-img;
+    }
+ }

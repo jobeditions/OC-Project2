@@ -1,0 +1,73 @@
+// =========================================
+//  Mixins
+// =========================================
+
+//mixin to change style of li on contact section -on click
+
+@mixin contact-click($back-col,$transform,$transition) {
+  background-color: $back-col;
+  transform: $transform;
+  transition: $transition;
+}
+//mixin for styling each hobby button
+@mixin hobbies{
+   border: solid .19em #333;
+   border-radius: 100%;
+   padding: 12% 12%;
+}
+
+//mixin to style the name ASHOK DEB - right section of CV
+
+@mixin heading-name($col,$ml) {
+  text-transform: uppercase;
+  font-size: 2.7em;
+  font-weight: 500;
+  letter-spacing: .5px;
+  line-height: 1.5em;
+  display: none;
+  color: $col;
+  margin-left: $ml;
+}
+
+//mixin for styling each hobby buttons
+
+@mixin hobbies{
+   border: solid .19em #333;
+   border-radius: 100%;
+   padding: 12% 12%;
+}
+
+@mixin hobbies-img{
+   display:block;
+   width: 100%;
+   height: auto;
+}
+
+//mixins to create the sidebars of the social social-buttons
+
+@mixin social-buttons($top: null,
+                      $left: null,
+                      $bottom: null,
+                      $width: null,
+                      $height:null,
+                      $transform: null){
+  content: '';
+  position: absolute;
+  background: $soc-btn-sides;
+  transition: .5s;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  width: $width;
+  height: $height;
+  transform: $transform;
+}
+
+//mixins to centre an element within a particular div
+
+@mixin centred{
+  display:grid;
+  justify-self: center;
+  align-self: center;
+  margin:auto;
+}

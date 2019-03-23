@@ -1,0 +1,42 @@
+// CSS Styling of the Hobbies Section of the CV - Footer
+
+footer {
+    background: rgb(255,165,0);
+}
+
+.hobbies {
+    width: 80%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 5%;
+
+   // new Class is used in toggleClass - Jquery . The background color of "footer" is changed on click
+
+   &-footer{
+      background: rgba(0,0,0,.5);
+      transition: .5s ease-in;
+     }
+
+
+   // new Class is used in toggleClass - Jquery . The stylings of hobby icons are changed on click
+
+   &-new {
+     background: $hobbies-onclick-color;
+     transform: scale(1.3) rotateY(540deg);
+     transition: all 2s ease-in;
+     border: solid .21em #333;
+     box-shadow: (0 0 1.5em $hobbies-onclick-color);
+     text-shadow: (0 0 1.5em $hobbies-onclick-color);
+     border-radius: 100%;
+    }
+
+  // new Class is used in toggleClass - Jquery . The stylings of hobby icons are Reversed on click
+
+  &-reverse {
+    background: transparent;
+    transform: scale(1) rotateY(0deg);
+    transition: all 2s ease-in-out;
+   }
+
+  }
