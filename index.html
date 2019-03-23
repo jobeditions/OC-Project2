@@ -8,9 +8,13 @@
         <!-- defines the charecter set used in the document -->
         <meta name="description" content="CV Project2">
 
-	    <meta name="keywords" content="CV,Project2, Ashok DEB">
+	      <meta name="keywords" content="CV,Project2, Ashok DEB">
 
   	    <meta name="author" content="Ashok DEB">
+
+        <meta name="keywords" content="CV,Project2, Ashok DEB">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <title>Ashok DEB - CV</title>
         <!-- declares the title of the site that appears in the title bar of the page.It helps the search engines to locate the site in case with the "keys words" declared -->
@@ -18,8 +22,16 @@
         <link rel="icon" type="image/ico" href="ressources/icones/favicon.ico"/>
         <!-- for the icon in title bar -->
 
-        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <link type="text/css" rel="stylesheet" href="assets/stylesheets/style.css"/>
         <!--linking the css file with the HTML document.The CSS output of the Sass file style.scss is stored in this file -->
+
+        <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+        <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+
+        <!--[if IE]>
+           <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+       <![endif]-->
 
         <!--<link type="text/css" rel="stylesheet" media = "screen and (min-width:480px)" href="above480.css"/>
         <!--linking the css media-query for viewport size more than 480px.-->
@@ -56,11 +68,11 @@
                     <div class="info">
 
                         <ul class="selected">
-                            <li class="ad"><p><br />Address : <br />Paris FRANCE</p></li>
-                            <li class="tel"><p><br />Mobile : <br />+33-651634750</p></li>
-                            <li class="mail"><p><br />Email : <br /> jobeditions@gmail.com</p></li>
-                            <li class="web"><p><br />WebSite : <br /><a href="#">www.ashokdeb.fr</a></p></li>
-                            <li class="skype"><br /><p>Skype : <br />www.ashokdeb.fr</p></li>
+                            <li class="cont-ad"><i class="far fa-address-book fa-2x"></i><p><br />Address : <br />Paris FRANCE</p></li>
+                            <li class="cont-tel"><i class="fas fa-mobile-alt fa-2x"></i><p><br />Mobile : <br />+33-651634750</p></li>
+                            <li class="cont-mail"><i class="fas fa-at fa-2x"></i><p><br />Email : <br /> jobeditions@gmail.com</p></li>
+                            <li class="cont-web"><i class="fab fa-accusoft fa-2x"></i><p><br />WebSite : <br /><a href="#">www.ashokdeb.fr</a></p></li>
+                            <li class="cont-skype"><i class="fab fa-skype fa-2x"></i><p><br />Skype : <br />www.ashokdeb.fr</p></li>
                         </ul>
 
                     </div>
@@ -137,12 +149,13 @@
             <!-- End of Section Introduction -->
 
             <!-- Beginning of Education Section -->
-            <section class="right-section education">
-
-                	<div class="heading">
-                        <i class="fas fa-graduation-cap fa-2x" style="float : left"></i>
-                        <h2>Education</h2>
-                        <hr>
+            <section class="right-section">
+                    <div class="heading">
+                	     <div class="edu">
+                          <i class="tog-heading fas fa-graduation-cap fa-2x" style="float : left"></i>
+                          <h2>Education</h2>
+                       </div>
+                       <hr>
                     </div>
 
                     <article class="content">
@@ -175,7 +188,7 @@
                 <!-- End of Education Section -->
 
                 <!-- Beginning of Experience Section -->
-                <section class="right-section experience">
+                <section class="right-section ">
 
                 	<div class="heading">
                 	    <i class="fas fa-briefcase fa-2x" style="float : left"></i>
@@ -213,7 +226,7 @@
                 <!-- End of Education Section -->
 
                 <!-- Beginning of Reference Section -->
-                <section class="right-section reference">
+                <section class="right-section">
 
                 	<div class="heading">
                 	    <i class="fas fa-pen fa-2x" style="float : left"></i>
@@ -256,6 +269,6 @@
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
         <!-- Jquery 3.1 minified version CDN included -->
 
-        <script src="assets/js/App.js"></script>
+        <script src="assets/javascripts/App.js"></script>
         <!-- linking the javascript file -->
     </body>

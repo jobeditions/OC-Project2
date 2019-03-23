@@ -1,0 +1,22 @@
+body {
+  width: 60%;
+  margin: auto;
+}
+
+.wrapper {
+  @include wrap($grid-tcol: 230px 3% auto 3%) {
+  }
+  //Css Styling of the left Section of the CV
+  &-left {
+    @include wrap($grid-trow: repeat(4, auto)) {
+    grid-column: 1/2;
+    background: $left-section-background;
+    }
+  }
+  // Css Styling of the Right Section of the CV
+  &-right {
+    @include wrap( $grid-trow: repeat(4, auto)){
+    grid-column: 3/4;
+    }
+  }
+}
