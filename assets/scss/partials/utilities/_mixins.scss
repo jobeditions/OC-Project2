@@ -1,13 +1,20 @@
 // =========================================
 //  Mixins
 // =========================================
-
+@mixin wrap($grid-trow: null,
+                 $grid-tcol: null){
+  display: grid;
+  grid-template-rows: $grid-trow;
+  grid-template-columns: $grid-tcol;
+  @content;
+}
 //mixin to change style of li on contact section -on click
 
 @mixin contact-click($back-col,$transform,$transition) {
   background-color: $back-col;
   transform: $transform;
   transition: $transition;
+  overflow: hidden;
 }
 //mixin for styling each hobby button
 @mixin hobbies{

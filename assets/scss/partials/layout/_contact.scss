@@ -1,15 +1,13 @@
 // CSS Styling of the Contact Section of the CV
 
 // Dividing up the space of "UL" into equal dimension grid rows for "LI" elements
-
-
 .info {
 
    ul {
+      @include wrap($grid-trow: repeat(5,auto)){
       height: auto;
-      display:grid;
-      grid-template-rows:repeat(5,auto);
-
+      overflow: hidden;
+      }
       li {
          font-weight: bold;
          background-color: $info-section-background;
@@ -33,6 +31,7 @@
            font-size: 1.05em;
            line-height: .9em;
            text-align: left;
+           color: $contact-icons;
 
          }
          i{
@@ -40,6 +39,7 @@
            height:70%;
            margin-top: 5%;
            margin-left: 7.5%;
+           color: $contact-icons;
          }
       }
      }
@@ -48,11 +48,11 @@
 
   .contact-new{
     @include contact-click($back-col:$white !important,
-                           $transform: scale(1.05) rotateX(360deg)translate(3%, 0),
+                           $transform: scale(1.1) rotateX(360deg) translate(0, 0),
                            $transition: .5s ease-in-out)
   }
   .contact-reverse{
     @include contact-click($back-col:$info-section-background !important,
-                           $transform: scale(1) rotateX(0deg)translate(0, 0),
+                           $transform: scale(1) rotateX(0deg) translate(0, 0),
                            $transition: .5s ease-in-out)
   }

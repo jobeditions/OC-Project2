@@ -4,23 +4,19 @@ body {
 }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: 230px 4% auto 4%;
-  height: 100%;
-
+  @include wrap($grid-tcol: 230px 4% auto 4%) {
+  }
   //Css Styling of the left Section of the CV
   &-left {
+    @include wrap($grid-trow: repeat(4, auto)) {
     grid-column: 1/2;
-    display: grid;
-    grid-template-rows: repeat(4, auto);
     background: $left-section-background;
     }
-
+  }
   // Css Styling of the Right Section of the CV
   &-right {
+    @include wrap( $grid-trow: repeat(4, auto)){
     grid-column: 3/4;
-    display: grid;
-    grid-template-rows: repeat(4, auto);
     }
-
+  }
 }
