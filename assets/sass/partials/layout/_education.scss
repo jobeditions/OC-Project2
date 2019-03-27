@@ -1,15 +1,13 @@
 // Css Styling of the Right Section of the CV - Section-Education
 
 .education {
-    @include wrap($grid-trow: 20% repeat(2,auto),$grid-tcol: 3)
+  display: grid;
+  grid-template-rows: 20% repeat(2,auto);
+  margin-bottom: 0;
 }
-
 
 .experience {
     display: grid;
-    grid-template-rows: 20% repeat(3,auto);
-}
-.content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 20% repeat(2,auto);
+    margin-bottom: 0;
 }
