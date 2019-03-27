@@ -74,7 +74,7 @@
 
 @mixin centred{
   display:grid;
-  justify-self: center;
+  justify-self: start;
   align-self: center;
-  margin:auto;
+  margin-right:auto;
 }

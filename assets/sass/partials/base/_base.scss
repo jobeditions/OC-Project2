@@ -4,7 +4,7 @@ body {
 }
 
 .wrapper {
-  @include wrap($grid-tcol: 230px 3% auto 3%) {
+  @include wrap($grid-tcol: 230px 30px auto 30px) {
   }
   //Css Styling of the left Section of the CV
   &-left {

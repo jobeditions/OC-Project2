@@ -15,14 +15,14 @@
         'partials/layout/intro',
         'partials/components/social',
         'partials/components/heading-sec',
-          'partials/layout/heading-book',
+        'partials/layout/heading-book',
         'partials/layout/education';
 
         // =========================================
         //  Debugger
         // =========================================
 
-        section {
+        ul,section {
          border-style: solid;
          border-width: 1px;
          border-color: red;

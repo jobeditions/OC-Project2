@@ -3,12 +3,19 @@
 .introduction {
     display: grid;
     grid-template-columns: 1.7fr 2fr;
+    grid-template-rows: 1fr 3fr;
+}
+
+.social {
+  grid-row: 1;
+  grid-column: span 2;
 }
 
 // Css Styling of the Right Section of the CV - Section Self
 
 .self {
-
+  grid-row: 2;
+  grid-column: span 2;
   @include centred;
 
     .self-inner {

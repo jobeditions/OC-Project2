@@ -27,26 +27,27 @@ footer, header, hgroup, menu, nav, section {
 /* line 25, ../sass/partials/base/_reset.scss */
 body {
   line-height: 1;
+  height: 100%;
 }
 
-/* line 28, ../sass/partials/base/_reset.scss */
+/* line 29, ../sass/partials/base/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 31, ../sass/partials/base/_reset.scss */
+/* line 32, ../sass/partials/base/_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 34, ../sass/partials/base/_reset.scss */
+/* line 35, ../sass/partials/base/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 39, ../sass/partials/base/_reset.scss */
+/* line 40, ../sass/partials/base/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -61,7 +62,7 @@ body {
 /* line 6, ../sass/partials/base/_base.scss */
 .wrapper {
   display: grid;
-  grid-template-columns: 230px 3% auto 3%;
+  grid-template-columns: 230px 30px auto 30px;
 }
 /* line 10, ../sass/partials/base/_base.scss */
 .wrapper-left {
@@ -117,7 +118,7 @@ header .avatar img {
   transition-duration: .1s;
 }
 
-/* line 3, ../sass/partials/components/_banner.scss */
+/* line 2, ../sass/partials/components/_banner.scss */
 .left-banner {
   position: relative;
   text-align: center;
@@ -160,15 +161,14 @@ header .avatar img {
   height: 95%;
   width: 100%;
   display: flex;
-  flex-direction: rows;
 }
-/* line 23, ../sass/partials/layout/_contact.scss */
+/* line 22, ../sass/partials/layout/_contact.scss */
 .info ul li:hover {
   background-color: rgba(255, 255, 255, 0.4);
 }
-/* line 27, ../sass/partials/layout/_contact.scss */
+/* line 26, ../sass/partials/layout/_contact.scss */
 .info ul li p {
-  width: 70%;
+  flex: 3;
   height: 100%;
   padding-bottom: 5%;
   font-size: 1.05em;
@@ -176,16 +176,16 @@ header .avatar img {
   text-align: left;
   color: #331a00;
 }
-/* line 37, ../sass/partials/layout/_contact.scss */
+/* line 36, ../sass/partials/layout/_contact.scss */
 .info ul li i {
-  width: 20%;
+  flex: 1;
   height: 70%;
   margin-top: 5%;
   margin-left: 7.5%;
   color: #331a00;
 }
 
-/* line 49, ../sass/partials/layout/_contact.scss */
+/* line 48, ../sass/partials/layout/_contact.scss */
 .contact-new {
   background-color: #FFF !important;
   transform: scale(1.1) rotateX(360deg) translate(2.5%, 0);
@@ -193,7 +193,7 @@ header .avatar img {
   overflow: hidden;
 }
 
-/* line 54, ../sass/partials/layout/_contact.scss */
+/* line 53, ../sass/partials/layout/_contact.scss */
 .contact-reverse {
   background-color: orange;
   transform: scale(1) rotateX(0deg) translate(0, 0);
@@ -260,16 +260,25 @@ footer {
 .introduction {
   display: grid;
   grid-template-columns: 1.7fr 2fr;
+  grid-template-rows: 1fr 3fr;
 }
 
-/* line 10, ../sass/partials/layout/_intro.scss */
-.self {
-  display: grid;
-  justify-self: center;
-  align-self: center;
-  margin: auto;
+/* line 9, ../sass/partials/layout/_intro.scss */
+.social {
+  grid-row: 1;
+  grid-column: span 2;
 }
+
 /* line 16, ../sass/partials/layout/_intro.scss */
+.self {
+  grid-row: 2;
+  grid-column: span 2;
+  display: grid;
+  justify-self: start;
+  align-self: center;
+  margin-right: auto;
+}
+/* line 23, ../sass/partials/layout/_intro.scss */
 .self .self-inner h1 {
   text-transform: uppercase;
   font-size: 2.7em;
@@ -280,7 +289,7 @@ footer {
   color: #ffbf1c;
   margin-left: 0;
 }
-/* line 21, ../sass/partials/layout/_intro.scss */
+/* line 28, ../sass/partials/layout/_intro.scss */
 .self .self-inner h2 {
   text-transform: uppercase;
   font-size: 2.7em;
@@ -291,14 +300,14 @@ footer {
   color: #000;
   margin-left: 5%;
 }
-/* line 25, ../sass/partials/layout/_intro.scss */
+/* line 32, ../sass/partials/layout/_intro.scss */
 .self .self-inner .name-2 {
   font-size: 1.2em  !important;
   font-weight: 550  !important;
   line-height: 1.5em !important;
   display: none;
 }
-/* line 31, ../sass/partials/layout/_intro.scss */
+/* line 38, ../sass/partials/layout/_intro.scss */
 .self .self-inner .name-2 span {
   text-decoration: underline !important;
 }
@@ -308,90 +317,93 @@ footer {
   list-style: none;
   position: relative;
   top: 5%;
-  margin-left: 10%;
+  margin-left: auto;
   padding: 0;
   display: flex;
+  justify-content: space-evenly;
+  width: 40%;
 }
-/* line 13, ../sass/partials/components/_social.scss */
+/* line 15, ../sass/partials/components/_social.scss */
 .social ul li {
   list-style: none;
   padding: 0;
-  margin-left: 5.5%;
+  margin-left: 4%;
+  flex: 1 1 10%;
   /*Changing background color of the Social buttons on hover */
 }
-/* line 20, ../sass/partials/components/_social.scss */
+/* line 23, ../sass/partials/components/_social.scss */
 .social ul li:nth-child(1) a:hover {
   background: #1ab7ea;
 }
-/* line 23, ../sass/partials/components/_social.scss */
+/* line 26, ../sass/partials/components/_social.scss */
 .social ul li:nth-child(2) a:hover {
   background: #55acee;
 }
-/* line 26, ../sass/partials/components/_social.scss */
+/* line 29, ../sass/partials/components/_social.scss */
 .social ul li:nth-child(3) a:hover {
   background: #0077B5;
 }
-/* line 29, ../sass/partials/components/_social.scss */
+/* line 32, ../sass/partials/components/_social.scss */
 .social ul li:nth-child(4) a:hover {
   background: #02b875;
 }
-/* line 32, ../sass/partials/components/_social.scss */
+/* line 35, ../sass/partials/components/_social.scss */
 .social ul li:nth-child(5) a:hover {
   background: #3aaf85;
 }
-/* line 35, ../sass/partials/components/_social.scss */
+/* line 38, ../sass/partials/components/_social.scss */
 .social ul li:nth-child(6) a:hover {
   background: #ff3300;
 }
-/* line 42, ../sass/partials/components/_social.scss */
+/* line 45, ../sass/partials/components/_social.scss */
 .social ul a {
   color: rgba(38, 38, 38, 0.85);
   background-color: rgba(255, 191, 28, 0.8);
-  width: 112%;
-  height: 112%;
+  width: 100%;
+  height: 100%;
   display: block;
   text-align: center;
   transform: rotate(-20deg) skew(2deg);
   transition: .5s;
   box-shadow: -0.5em 0.5em 0.5em rgba(0, 0, 0, 0.5);
 }
-/* line 55, ../sass/partials/components/_social.scss */
+/* line 58, ../sass/partials/components/_social.scss */
 .social ul a:hover {
   transition: all .5s ease-out;
   box-shadow: -0.9em 0.9em 0.9em rgba(0, 0, 0, 0.5);
   transform: scale(1.2) rotate(-20deg) skew(2deg) translate(-5%, -5%);
 }
-/* line 63, ../sass/partials/components/_social.scss */
+/* line 66, ../sass/partials/components/_social.scss */
 .social ul a::before {
   content: '';
   position: absolute;
   background: #b1b1b1;
   transition: .5s;
-  top: 0.2em;
+  top: 0.15em;
   left: -0.4em;
   bottom: 0;
   width: 0.4em;
   height: 100%;
   transform: rotate(0deg) skewY(-45deg);
 }
-/* line 66, ../sass/partials/components/_social.scss */
+/* line 69, ../sass/partials/components/_social.scss */
 .social ul a::after {
   content: '';
   position: absolute;
   background: #b1b1b1;
   transition: .5s;
-  top: 2.3em;
+  top: 2.4em;
   left: -0.1em;
   bottom: -0.3em;
   width: 100%;
   height: 0.4em;
   transform: rotate(0deg) skewX(-45deg);
 }
-/* line 72, ../sass/partials/components/_social.scss */
+/* line 75, ../sass/partials/components/_social.scss */
 .social ul i {
   margin-top: .1em;
 }
-/* line 77, ../sass/partials/components/_social.scss */
+/* line 80, ../sass/partials/components/_social.scss */
 .social ul i:hover {
   color: #FFF;
 }
@@ -533,7 +545,7 @@ footer {
 }
 
 /* line 25, ../sass/style.scss */
-section {
+ul, section {
   border-style: solid;
   border-width: 1px;
   border-color: red;

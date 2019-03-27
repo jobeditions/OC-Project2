@@ -18,14 +18,13 @@
          height: 95%;
          width: 100%;
          display: flex;
-         flex-direction: rows;
          //Changing styles of li on hover
          &:hover {
               background-color: rgba($white,0.4);
              }
 
          p{
-           width:70%;
+           flex: 3;
            height: 100%;
            padding-bottom: 5%;
            font-size: 1.05em;
@@ -35,7 +34,7 @@
 
          }
          i{
-           width:20%;
+           flex: 1;
            height:70%;
            margin-top: 5%;
            margin-left: 7.5%;
