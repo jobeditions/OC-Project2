@@ -2,7 +2,7 @@
   display: grid;
   grid-auto-rows: auto;
   grid-template-columns: repeat(3,1fr);
-  margin-top: 2%;
+  margin-top: 1%;
 
 
   &-left{
@@ -15,27 +15,17 @@
     margin: 0;
 
     h3{
-      text-transform: uppercase;
-      font-size: 1.15em;
-      font-weight: 500;
-      letter-spacing: .3px;
-      line-height: 1.2em;
-      color: $black;
-      margin:1.5% 1.5%;
+      @include content-right-heading($fnt-sze: 1.15em,$lttr-spacing: .3px){
+        text-transform: uppercase;
+      }
     }
-
     h4{
-      font-size: 1em;
-      font-weight: 500;
-      letter-spacing: .1.5px;
-      line-height: 1.2em;
-      color: $black;
-      margin:1.5% 1.5%;
+      @include content-right-heading($fnt-sze: 1em,$lttr-spacing: .1px){}
     }
 
     p{
       margin: 1.5% 1.5%;
-      text-align: justify;
+      text-align: left;
       line-height: 1.4em !important;
     }
   }

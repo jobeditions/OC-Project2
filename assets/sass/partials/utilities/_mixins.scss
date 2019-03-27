@@ -71,11 +71,21 @@
   transform: $transform;
 }
 
-//mixins to centre an element within a particular div
+//mixins to centre an CV-name within a particular div
 
 @mixin centred{
   display:grid;
   justify-self: start;
   align-self: center;
   margin-right:auto;
+}
+
+@mixin content-right-heading($fnt-sze:null,$lttr-spacing: null){
+  font-size: $fnt-sze;
+  font-weight: 500;
+  letter-spacing: $lttr-spacing;
+  line-height: 1.2em;
+  color: $black;
+  margin:1.5% 1.5%;
+ @content;
 }

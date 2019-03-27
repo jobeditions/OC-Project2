@@ -74,7 +74,7 @@ body {
 /* line 17, ../sass/partials/base/_base.scss */
 .wrapper-right {
   display: grid;
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: 1fr repeat(3, auto);
   grid-column: 3/4;
 }
 
@@ -260,7 +260,7 @@ footer {
 .introduction {
   display: grid;
   grid-auto-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 4fr;
 }
 
 /* line 9, ../sass/partials/layout/_intro.scss */
@@ -450,7 +450,7 @@ footer {
   display: grid;
   grid-auto-rows: auto;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 2%;
+  margin-top: 1%;
 }
 /* line 8, ../sass/partials/components/_article-component.scss */
 .content-left {
@@ -464,27 +464,27 @@ footer {
 }
 /* line 17, ../sass/partials/components/_article-component.scss */
 .content-right h3 {
-  text-transform: uppercase;
   font-size: 1.15em;
   font-weight: 500;
-  letter-spacing: .3px;
+  letter-spacing: 0.3px;
   line-height: 1.2em;
   color: #000;
   margin: 1.5% 1.5%;
+  text-transform: uppercase;
 }
-/* line 27, ../sass/partials/components/_article-component.scss */
+/* line 22, ../sass/partials/components/_article-component.scss */
 .content-right h4 {
   font-size: 1em;
   font-weight: 500;
-  letter-spacing: 0.1 0.5px;
+  letter-spacing: 0.1px;
   line-height: 1.2em;
   color: #000;
   margin: 1.5% 1.5%;
 }
-/* line 36, ../sass/partials/components/_article-component.scss */
+/* line 26, ../sass/partials/components/_article-component.scss */
 .content-right p {
   margin: 1.5% 1.5%;
-  text-align: justify;
+  text-align: left;
   line-height: 1.4em !important;
 }
 
@@ -584,7 +584,7 @@ footer {
 /* line 9, ../sass/partials/layout/_education.scss */
 .experience {
   display: grid;
-  grid-template-rows: 20% repeat(2, auto);
+  grid-template-rows: 20% repeat(3, auto);
   margin-bottom: 0;
 }
 

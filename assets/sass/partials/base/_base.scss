@@ -15,7 +15,7 @@ body {
   }
   // Css Styling of the Right Section of the CV
   &-right {
-    @include wrap( $grid-trow: repeat(4, auto)){
+    @include wrap( $grid-trow: 1fr repeat(3, auto)){
     grid-column: 3/4;
     }
   }
