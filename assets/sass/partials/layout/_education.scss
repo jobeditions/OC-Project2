@@ -1,9 +1,9 @@
 // Css Styling of the Right Section of the CV - Section-Education
 
 .education {
-    display: grid;
-    grid-template-rows: 20% repeat(2,auto);
+    @include wrap($grid-trow: 20% repeat(2,auto),$grid-tcol: 3)
 }
+
 
 .experience {
     display: grid;

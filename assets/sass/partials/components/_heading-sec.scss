@@ -1,5 +1,7 @@
 
 .heading {
+   grid-row: 1;
+   grid-column: span 3;
 
   i {
     color: $left-section-background;
@@ -31,4 +33,3 @@
   .opacity-edu {
     opacity:0;
   }
-  
