@@ -453,21 +453,14 @@ footer {
   margin: 0 auto 4.5% auto;
 }
 /* line 6, ../sass/partials/components/_article-component.scss */
-.content-ref {
-  grid-column: span 1;
-  margin: 0;
-}
-/* line 11, ../sass/partials/components/_article-component.scss */
 .content-left {
   grid-column: span 1;
-  margin: 0;
 }
-/* line 16, ../sass/partials/components/_article-component.scss */
+/* line 11, ../sass/partials/components/_article-component.scss */
 .content-right {
   grid-column: span 2;
-  margin: 0;
 }
-/* line 20, ../sass/partials/components/_article-component.scss */
+/* line 15, ../sass/partials/components/_article-component.scss */
 .content-right h3 {
   font-size: 1.15em;
   font-weight: 500;
@@ -477,7 +470,7 @@ footer {
   margin: 1.5% 1.5%;
   text-transform: uppercase;
 }
-/* line 25, ../sass/partials/components/_article-component.scss */
+/* line 20, ../sass/partials/components/_article-component.scss */
 .content-right h4 {
   font-size: 1em;
   font-weight: 500;
@@ -486,26 +479,26 @@ footer {
   color: #000;
   margin: 1.5% 1.5%;
 }
-/* line 29, ../sass/partials/components/_article-component.scss */
+/* line 24, ../sass/partials/components/_article-component.scss */
 .content-right p {
   margin: 1.5% 1.5%;
   text-align: left;
   line-height: 1.4em !important;
 }
 
-/* line 37, ../sass/partials/components/_article-component.scss */
+/* line 32, ../sass/partials/components/_article-component.scss */
 .contents {
   display: grid;
   grid-auto-rows: auto;
   grid-template-columns: repeat(2, auto);
   margin: 0 auto 4.5% auto;
 }
-/* line 41, ../sass/partials/components/_article-component.scss */
+/* line 36, ../sass/partials/components/_article-component.scss */
 .contents-ref {
   grid-column: span 1;
   margin: 0;
 }
-/* line 45, ../sass/partials/components/_article-component.scss */
+/* line 40, ../sass/partials/components/_article-component.scss */
 .contents-ref p {
   margin: 1.5% 1.5%;
   text-align: left;
@@ -604,7 +597,7 @@ footer {
   grid-template-rows: 20% repeat(2, auto);
 }
 
-/* line 8, ../sass/partials/layout/_education.scss */
+/* line 7, ../sass/partials/layout/_education.scss */
 .experience {
   display: grid;
   grid-template-rows: 20% repeat(3, auto);

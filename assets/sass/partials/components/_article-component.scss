@@ -3,19 +3,14 @@
   @include wrap($grid-autorows: auto,$grid-tcol: repeat(3,1fr)){
     margin: 0 auto 4.5% auto;
   }
-  &-ref{
-    grid-column: span 1;
-    margin: 0;
-  }
-
   &-left{
     grid-column: span 1;
-    margin: 0;
+  //  margin: 0;
   }
 
   &-right{
     grid-column: span 2;
-    margin: 0;
+    //margin: 0;
 
     h3{
       @include content-right-heading($fnt-sze: 1.15em,$lttr-spacing: .3px){
