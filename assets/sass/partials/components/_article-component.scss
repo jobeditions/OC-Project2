@@ -2,8 +2,12 @@
   display: grid;
   grid-auto-rows: auto;
   grid-template-columns: repeat(3,1fr);
-  margin-top: 1%;
+  margin: 0 auto 5% auto;
 
+  &-ref{
+    grid-column: span 1;
+    margin: 0;
+  }
 
   &-left{
     grid-column: span 1;
@@ -28,5 +32,22 @@
       text-align: left;
       line-height: 1.4em !important;
     }
+  }
+}
+.contents{
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(2,auto);
+  margin: 0 auto 5% auto;
+
+  &-ref{
+    grid-column: span 1;
+    margin: 0;
+
+    p{
+      margin: 1.5% 1.5%;
+      text-align: left;
+      line-height: 1.4em !important;
+      }
   }
 }

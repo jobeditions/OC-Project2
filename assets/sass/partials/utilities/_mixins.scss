@@ -80,6 +80,8 @@
   margin-right:auto;
 }
 
+//mixins to style the h3 and h4 of the right-content section of edication and experience
+
 @mixin content-right-heading($fnt-sze:null,$lttr-spacing: null){
   font-size: $fnt-sze;
   font-weight: 500;

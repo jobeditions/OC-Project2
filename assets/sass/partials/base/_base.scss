@@ -1,5 +1,5 @@
 body {
-  width: 60%;
+  width: 55%;
   margin: auto;
 }
 
@@ -8,7 +8,7 @@ body {
   }
   //Css Styling of the left Section of the CV
   &-left {
-    @include wrap($grid-trow: repeat(4, auto)) {
+    @include wrap($grid-trow: 1fr auto 2fr auto) {
     grid-column: 1/2;
     background: $left-section-background;
     }
