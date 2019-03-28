@@ -517,7 +517,7 @@ footer {
   position: relative;
   width: 10px;
   height: 10px;
-  margin: 0;
+  margin-left: 5%;
   perspective: 160px;
   transform-style: preserve-3d;
   -webkit-backface-visibility: visible;
@@ -525,11 +525,11 @@ footer {
 /* line 9, ../sass/partials/layout/_heading-book.scss */
 .container .paper {
   position: absolute;
-  margin: auto;
-  width: 25px;
-  height: 35px;
-  background: #fff;
-  border: 5px solid #218EED;
+  margin: 0;
+  width: 20px;
+  height: 30px;
+  background: white;
+  border: 2px solid orange;
   border-left: 0;
   transform-origin: 0% 50%;
 }
@@ -602,17 +602,15 @@ footer {
 .education {
   display: grid;
   grid-template-rows: 20% repeat(2, auto);
-  margin-bottom: 0;
 }
 
-/* line 9, ../sass/partials/layout/_education.scss */
+/* line 8, ../sass/partials/layout/_education.scss */
 .experience {
   display: grid;
   grid-template-rows: 20% repeat(3, auto);
-  margin-bottom: 0;
 }
 
-/* line 14, ../sass/partials/layout/_education.scss */
+/* line 12, ../sass/partials/layout/_education.scss */
 .reference {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

@@ -106,6 +106,8 @@ $(".edu").one('click',function () {
               contbook += '<div class="paper"></div>';
              }
             $(".container").wrapInner(contbook);
+            $(".fa-graduation-cap").css('display','none');
+            $(".edu h2").css('margin-left','5%');
             });
 
 $('.avatar').on('click', function () {

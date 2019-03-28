@@ -3,13 +3,11 @@
 .education {
   display: grid;
   grid-template-rows: 20% repeat(2,auto);
-  margin-bottom: 0;
-}
+  }
 
 .experience {
     display: grid;
     grid-template-rows: 20% repeat(3,auto);
-    margin-bottom: 0;
 }
 .reference {
     display: grid;

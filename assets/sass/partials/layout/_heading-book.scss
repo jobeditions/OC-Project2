@@ -2,21 +2,21 @@
   position: relative;
   width: 10px;
   height: 10px;
-  margin: 0;
+  margin-left: 5%;
   perspective: 160px;
   transform-style: preserve-3d;
   -webkit-backface-visibility: visible;
   .paper {
     position: absolute;
-    margin: auto;
+    margin: 0;
     //left: -9999px;
     //right: -9999px;
     //top: -9999px;
     //bottom: -9999px;
-    width: 25px;
-    height: 35px;
-    background: #fff;
-    border: 5px solid #218EED;
+    width: 20px;
+    height: 30px;
+    background: rgba($white,1);
+    border: 2px solid $info-section-background;
     border-left: 0;
     transform-origin: 0% 50%;
   }
