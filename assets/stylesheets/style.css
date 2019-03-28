@@ -445,22 +445,22 @@ footer {
   opacity: 0;
 }
 
-/* line 2, ../sass/partials/components/_article-component.scss */
+/* line 6, ../sass/partials/components/_article-component.scss */
 .content {
   display: grid;
   grid-auto-rows: auto;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto 4.5% auto;
 }
-/* line 6, ../sass/partials/components/_article-component.scss */
+/* line 10, ../sass/partials/components/_article-component.scss */
 .content-left {
   grid-column: span 1;
 }
-/* line 11, ../sass/partials/components/_article-component.scss */
+/* line 15, ../sass/partials/components/_article-component.scss */
 .content-right {
   grid-column: span 2;
 }
-/* line 15, ../sass/partials/components/_article-component.scss */
+/* line 19, ../sass/partials/components/_article-component.scss */
 .content-right h3 {
   font-size: 1.15em;
   font-weight: 500;
@@ -470,7 +470,7 @@ footer {
   margin: 1.5% 1.5%;
   text-transform: uppercase;
 }
-/* line 20, ../sass/partials/components/_article-component.scss */
+/* line 24, ../sass/partials/components/_article-component.scss */
 .content-right h4 {
   font-size: 1em;
   font-weight: 500;
@@ -479,26 +479,26 @@ footer {
   color: #000;
   margin: 1.5% 1.5%;
 }
-/* line 24, ../sass/partials/components/_article-component.scss */
+/* line 28, ../sass/partials/components/_article-component.scss */
 .content-right p {
   margin: 1.5% 1.5%;
   text-align: left;
   line-height: 1.4em !important;
 }
 
-/* line 32, ../sass/partials/components/_article-component.scss */
+/* line 35, ../sass/partials/components/_article-component.scss */
 .contents {
   display: grid;
   grid-auto-rows: auto;
   grid-template-columns: repeat(2, auto);
   margin: 0 auto 4.5% auto;
 }
-/* line 36, ../sass/partials/components/_article-component.scss */
+/* line 39, ../sass/partials/components/_article-component.scss */
 .contents-ref {
   grid-column: span 1;
   margin: 0;
 }
-/* line 40, ../sass/partials/components/_article-component.scss */
+/* line 43, ../sass/partials/components/_article-component.scss */
 .contents-ref p {
   margin: 1.5% 1.5%;
   text-align: left;
@@ -521,7 +521,7 @@ footer {
   margin: 0;
   width: 20px;
   height: 30px;
-  background: white;
+  background: rgba(255, 165, 0, 0.05);
   border: 2px solid orange;
   border-left: 0;
   transform-origin: 0% 50%;

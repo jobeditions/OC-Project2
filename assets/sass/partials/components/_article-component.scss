@@ -1,4 +1,8 @@
-
+@mixin paragraphs($marg: null,$txt-align: null,$line-ht: null){
+    margin: $marg;
+    text-align: $txt-align;
+    line-height: $line-ht;
+   }
 .content{
   @include wrap($grid-autorows: auto,$grid-tcol: repeat(3,1fr)){
     margin: 0 auto 4.5% auto;
@@ -22,10 +26,9 @@
     }
 
     p{
-      margin: 1.5% 1.5%;
-      text-align: left;
-      line-height: 1.4em !important;
-    }
+      @include paragraphs($marg: 1.5% 1.5%,$txt-align: left,$line-ht:1.4em !important);
+
+     }
   }
 }
 
@@ -38,9 +41,7 @@
     margin: 0;
 
     p{
-      margin: 1.5% 1.5%;
-      text-align: left;
-      line-height: 1.4em !important;
+      @include paragraphs($marg: 1.5% 1.5%,$txt-align: left,$line-ht:1.4em !important);
       }
   }
 }

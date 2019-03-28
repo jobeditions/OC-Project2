@@ -2,7 +2,5 @@
 
 
   .content-info{
-      margin: 7.5% 7.5%;
-      text-align: center;
-      line-height: 1.4em !important;
+      @include paragraphs($marg: 7.5% 7.5%,$txt-align: center,$line-ht:1.4em !important);
      }

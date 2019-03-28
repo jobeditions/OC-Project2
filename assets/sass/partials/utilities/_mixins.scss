@@ -1,6 +1,9 @@
 // =========================================
 //  Mixins
 // =========================================
+
+// mixin used in grid layouts
+
 @mixin wrap($grid-trow: null,
                  $grid-tcol: null,$grid-autorows: null){
   display: grid;
@@ -19,10 +22,19 @@
 }
 
 //mixin for styling each hobby button
+
 @mixin hobbies{
    border: solid .19em #333;
    border-radius: 100%;
    padding: 12% 12%;
+}
+
+//mixing to display images
+
+@mixin hobbies-img{
+   display:block;
+   width: 100%;
+   height: auto;
 }
 
 //mixin to style the name ASHOK DEB - right section of CV
@@ -36,20 +48,6 @@
   display: none;
   color: $col;
   margin-left: $ml;
-}
-
-//mixin for styling each hobby buttons
-
-@mixin hobbies{
-   border: solid .19em #333;
-   border-radius: 100%;
-   padding: 12% 12%;
-}
-
-@mixin hobbies-img{
-   display:block;
-   width: 100%;
-   height: auto;
 }
 
 //mixins to create the sidebars of the social social-buttons
@@ -72,7 +70,7 @@
   transform: $transform;
 }
 
-//mixins to centre an CV-name within a particular div
+//mixins to position an CV-name within a particular div
 
 @mixin centred{
   display:grid;
@@ -92,3 +90,11 @@
   margin:1.5% 1.5%;
  @content;
 }
+
+// mixins to style the paragraph elements
+
+@mixin paragraphs($marg: null,$txt-align: null,$line-ht: null){
+    margin: $marg;
+    text-align: $txt-align;
+    line-height: $line-ht;
+   }

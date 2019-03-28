@@ -5,11 +5,11 @@
   }
 }
 .experience {
-    @include wrap($grid-trow: 20% repeat(3,auto)){
-    }
- }
-
- .reference {
-     @include wrap($grid-tcol: repeat(2,1fr)){
-     }
+  @include wrap($grid-trow: 20% repeat(3,auto)){
   }
+}
+
+.reference {
+  @include wrap($grid-tcol: repeat(2,1fr)){
+  }
+}
