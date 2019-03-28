@@ -445,29 +445,29 @@ footer {
   opacity: 0;
 }
 
-/* line 1, ../sass/partials/components/_article-component.scss */
+/* line 2, ../sass/partials/components/_article-component.scss */
 .content {
   display: grid;
   grid-auto-rows: auto;
   grid-template-columns: repeat(3, 1fr);
-  margin: 0 auto 5% auto;
+  margin: 0 auto 4.5% auto;
 }
-/* line 7, ../sass/partials/components/_article-component.scss */
+/* line 6, ../sass/partials/components/_article-component.scss */
 .content-ref {
   grid-column: span 1;
   margin: 0;
 }
-/* line 12, ../sass/partials/components/_article-component.scss */
+/* line 11, ../sass/partials/components/_article-component.scss */
 .content-left {
   grid-column: span 1;
   margin: 0;
 }
-/* line 17, ../sass/partials/components/_article-component.scss */
+/* line 16, ../sass/partials/components/_article-component.scss */
 .content-right {
   grid-column: span 2;
   margin: 0;
 }
-/* line 21, ../sass/partials/components/_article-component.scss */
+/* line 20, ../sass/partials/components/_article-component.scss */
 .content-right h3 {
   font-size: 1.15em;
   font-weight: 500;
@@ -477,7 +477,7 @@ footer {
   margin: 1.5% 1.5%;
   text-transform: uppercase;
 }
-/* line 26, ../sass/partials/components/_article-component.scss */
+/* line 25, ../sass/partials/components/_article-component.scss */
 .content-right h4 {
   font-size: 1em;
   font-weight: 500;
@@ -486,7 +486,7 @@ footer {
   color: #000;
   margin: 1.5% 1.5%;
 }
-/* line 30, ../sass/partials/components/_article-component.scss */
+/* line 29, ../sass/partials/components/_article-component.scss */
 .content-right p {
   margin: 1.5% 1.5%;
   text-align: left;
@@ -498,14 +498,14 @@ footer {
   display: grid;
   grid-auto-rows: auto;
   grid-template-columns: repeat(2, auto);
-  margin: 0 auto 5% auto;
+  margin: 0 auto 4.5% auto;
 }
-/* line 43, ../sass/partials/components/_article-component.scss */
+/* line 41, ../sass/partials/components/_article-component.scss */
 .contents-ref {
   grid-column: span 1;
   margin: 0;
 }
-/* line 47, ../sass/partials/components/_article-component.scss */
+/* line 45, ../sass/partials/components/_article-component.scss */
 .contents-ref p {
   margin: 1.5% 1.5%;
   text-align: left;

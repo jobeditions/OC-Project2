@@ -1,9 +1,8 @@
-.content{
-  display: grid;
-  grid-auto-rows: auto;
-  grid-template-columns: repeat(3,1fr);
-  margin: 0 auto 5% auto;
 
+.content{
+  @include wrap($grid-autorows: auto,$grid-tcol: repeat(3,1fr)){
+    margin: 0 auto 4.5% auto;
+  }
   &-ref{
     grid-column: span 1;
     margin: 0;
@@ -34,12 +33,11 @@
     }
   }
 }
-.contents{
-  display: grid;
-  grid-auto-rows: auto;
-  grid-template-columns: repeat(2,auto);
-  margin: 0 auto 5% auto;
 
+.contents{
+  @include wrap($grid-autorows: auto,$grid-tcol: repeat(2,auto)){
+    margin: 0 auto 4.5% auto;
+  }
   &-ref{
     grid-column: span 1;
     margin: 0;
