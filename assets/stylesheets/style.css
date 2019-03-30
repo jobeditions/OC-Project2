@@ -1,6 +1,6 @@
 /* line 5, ../sass/partials/base/_reset.scss */
 :root {
-  font: 13px / 1.4 'Roboto',sans-serif;
+  font: 13px/1.4 "Roboto", sans-serif;
 }
 
 /* or html */
@@ -90,21 +90,20 @@ header .profile span {
   height: 13.7px;
   border-radius: 20%;
   border: solid .4px #000;
-  background: url("../assets/images/self/ashok9.jpg");
+  background: url("ashok9.jpg");
   background-size: 320px;
   background-position: 31% 0;
   background-attachment: fixed;
-  background-repeat: no-repeat;
 }
 
-/* line 24, ../sass/partials/layout/_header.scss */
+/* line 21, ../sass/partials/layout/_header.scss */
 header .avatar {
   position: absolute;
   width: 229px;
   padding: 1.5% 0 1.5% 0;
   background: #ffbf1c;
 }
-/* line 30, ../sass/partials/layout/_header.scss */
+/* line 27, ../sass/partials/layout/_header.scss */
 header .avatar img {
   border-radius: 50%;
   display: block;
@@ -112,7 +111,7 @@ header .avatar img {
   margin: 8% auto;
 }
 
-/* line 40, ../sass/partials/layout/_header.scss */
+/* line 37, ../sass/partials/layout/_header.scss */
 .avtoggle {
   opacity: 0;
   transition-duration: .1s;
@@ -146,14 +145,19 @@ header .avatar img {
     background-position: 50000%;
   }
 }
-/* line 6, ../sass/partials/layout/_contact.scss */
+/* line 3, ../sass/partials/layout/_contact.scss */
+.block-contact {
+  position: relative;
+}
+
+/* line 10, ../sass/partials/layout/_contact.scss */
 .info ul {
   display: grid;
   grid-template-rows: repeat(5, auto);
   height: auto;
   overflow: hidden;
 }
-/* line 11, ../sass/partials/layout/_contact.scss */
+/* line 15, ../sass/partials/layout/_contact.scss */
 .info ul li {
   font-weight: bold;
   background-color: orange;
@@ -162,11 +166,11 @@ header .avatar img {
   width: 100%;
   display: flex;
 }
-/* line 22, ../sass/partials/layout/_contact.scss */
+/* line 26, ../sass/partials/layout/_contact.scss */
 .info ul li:hover {
   background-color: rgba(255, 255, 255, 0.4);
 }
-/* line 26, ../sass/partials/layout/_contact.scss */
+/* line 30, ../sass/partials/layout/_contact.scss */
 .info ul li p {
   flex: 3;
   height: 100%;
@@ -176,7 +180,7 @@ header .avatar img {
   text-align: left;
   color: #331a00;
 }
-/* line 36, ../sass/partials/layout/_contact.scss */
+/* line 40, ../sass/partials/layout/_contact.scss */
 .info ul li i {
   flex: 1;
   height: 70%;
@@ -185,7 +189,7 @@ header .avatar img {
   color: #331a00;
 }
 
-/* line 48, ../sass/partials/layout/_contact.scss */
+/* line 52, ../sass/partials/layout/_contact.scss */
 .contact-new {
   background-color: #FFF !important;
   transform: scale(1.1) rotateX(360deg) translate(2.5%, 0);
@@ -193,7 +197,7 @@ header .avatar img {
   overflow: hidden;
 }
 
-/* line 53, ../sass/partials/layout/_contact.scss */
+/* line 57, ../sass/partials/layout/_contact.scss */
 .contact-reverse {
   background-color: orange;
   transform: scale(1) rotateX(0deg) translate(0, 0);
@@ -445,22 +449,22 @@ footer {
   opacity: 0;
 }
 
-/* line 6, ../sass/partials/components/_article-component.scss */
+/* line 7, ../sass/partials/components/_article-component.scss */
 .content {
   display: grid;
   grid-auto-rows: auto;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto 4.5% auto;
 }
-/* line 10, ../sass/partials/components/_article-component.scss */
+/* line 11, ../sass/partials/components/_article-component.scss */
 .content-left {
   grid-column: span 1;
 }
-/* line 15, ../sass/partials/components/_article-component.scss */
+/* line 16, ../sass/partials/components/_article-component.scss */
 .content-right {
   grid-column: span 2;
 }
-/* line 19, ../sass/partials/components/_article-component.scss */
+/* line 20, ../sass/partials/components/_article-component.scss */
 .content-right h3 {
   font-size: 1.15em;
   font-weight: 500;
@@ -470,7 +474,7 @@ footer {
   margin: 1.5% 1.5%;
   text-transform: uppercase;
 }
-/* line 24, ../sass/partials/components/_article-component.scss */
+/* line 25, ../sass/partials/components/_article-component.scss */
 .content-right h4 {
   font-size: 1em;
   font-weight: 500;
@@ -479,26 +483,26 @@ footer {
   color: #000;
   margin: 1.5% 1.5%;
 }
-/* line 28, ../sass/partials/components/_article-component.scss */
+/* line 29, ../sass/partials/components/_article-component.scss */
 .content-right p {
   margin: 1.5% 1.5%;
   text-align: left;
   line-height: 1.4em !important;
 }
 
-/* line 35, ../sass/partials/components/_article-component.scss */
+/* line 36, ../sass/partials/components/_article-component.scss */
 .contents {
   display: grid;
   grid-auto-rows: auto;
   grid-template-columns: repeat(2, auto);
   margin: 0 auto 4.5% auto;
 }
-/* line 39, ../sass/partials/components/_article-component.scss */
+/* line 40, ../sass/partials/components/_article-component.scss */
 .contents-ref {
   grid-column: span 1;
   margin: 0;
 }
-/* line 43, ../sass/partials/components/_article-component.scss */
+/* line 44, ../sass/partials/components/_article-component.scss */
 .contents-ref p {
   margin: 1.5% 1.5%;
   text-align: left;
